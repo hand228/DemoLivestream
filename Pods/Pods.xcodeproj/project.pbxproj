@@ -1,0 +1,1648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011BD0D10F61750B4C78DAAC87558EEF /* AMemoryHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC348146AC3933FB7F53D7AB62BC589 /* AMemoryHolder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		01A797CCDC00B728EC4856A622F4B36E /* PartsDataID.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F445176BB6375167FBF1516A6C92D15 /* PartsDataID.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		02F74686BFC4C4D4436EB6823DE13163 /* Live2DMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 68297844781827CDD6C056B021A4568A /* Live2DMotion.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0343C5A75C65361DF960DDB24AA6514C /* RTMPSharedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABEB8EE5C5A16188AA63AF0711C0AB1 /* RTMPSharedObject.swift */; };
+		036FB16105232FFF001381CA93C23199 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404EC29F942BC753DA7210BF7D6BED9 /* Constant.swift */; };
+		0612931BFA2BF00509637452BD603A0D /* NullAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FEB4F9B75C6F98061102079895A7FF /* NullAppender.swift */; };
+		06B9FF3D37FB0C2A5087B4FCEC070F4B /* ScalingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F3429111810422F09A1BCD1C9F951 /* ScalingMode.swift */; };
+		07FD019DC568C79FD20F184343EDBACA /* MemoryHolderFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 295842465BA8BB00881DEAE9A8C8064C /* MemoryHolderFixed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0A113A5ACCB427C9C810086E1CD7BA5A /* IDrawData.h in Headers */ = {isa = PBXBuildFile; fileRef = F6186C49EA3513CDFE6EE3ABB2B1477C /* IDrawData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0A367C7588C959EC6122E9E66613FF99 /* LDRectF.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CABAB300D316FB1D5B2A08627DD9B7C /* LDRectF.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0B00F90290A07C0EC94D950FC3C8E6B5 /* UtString.h in Headers */ = {isa = PBXBuildFile; fileRef = C73989181EB60D45862F6C40481FDC5E /* UtString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0BEFD05100F9AE7319C680A893F4DF96 /* NetStream+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97A212985A88256DE9023C21E51F48B /* NetStream+Extension.swift */; };
+		0E23CE24E653F2ADA922BD82AB11FB6C /* FLVTagType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820D12F51AB86BAB352D3C0DB6D869 /* FLVTagType.swift */; };
+		0FE57FCE9DC386F3D7060223619BB75E /* MemoryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CA2CA702753DB9D4E46D04A9970086A5 /* MemoryInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		11EE2D91A8BF072BB9731A7611CEB050 /* PacketizedElementaryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC319D1D5F69E22C78C6B2FF20FECEAE /* PacketizedElementaryStream.swift */; };
+		12C298F525BB46533D5124BAE9EE5587 /* UtOpenGLES2.h in Headers */ = {isa = PBXBuildFile; fileRef = D02EBB9F80E46F4B97410098CBBA4454 /* UtOpenGLES2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		12F64854D222DE2F4FDBD3E7C8F75968 /* MemoryParam.h in Headers */ = {isa = PBXBuildFile; fileRef = A64AB54FCE7BF031A80779465B34095F /* MemoryParam.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1331B0CE63DAC7619027A90917457B95 /* MHBin.h in Headers */ = {isa = PBXBuildFile; fileRef = 267474429B129CEA2AB59FCCD90BF0B5 /* MHBin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		14BD6A29E2F1C93B7959E346030A4201 /* Live2DModelIPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B01E85F1A0892439A09F38BE790FD4B8 /* Live2DModelIPhone.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		162E73CF4AC7638B619A0004D532160E /* TSReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACB3E5C4AD336B659C3D11E3020001 /* TSReader.swift */; };
+		171DA8058C10AE769AEB9465401B7A63 /* TYLive2D.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49F07941CCDA2801E960F6C232032592 /* TYLive2D.mm */; };
+		1C0BE9783957508CC78F8E089220A2E3 /* ID.h in Headers */ = {isa = PBXBuildFile; fileRef = 4026195D32D666DA75C6C949FAC8D2CC /* ID.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1C9D94830086C0AEC2EBE0848BB9662B /* MHPageHeaderFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D0D4EFF4EB7952277E0E9AF1886DB5 /* MHPageHeaderFixed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1E014EA8FBC823A57A1BD0A58964F730 /* LDVector.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EB524C50BED2B90DACF5C6727ACD85 /* LDVector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1E6107DA9B43068C82C3227B8CC0AC62 /* HTTPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00800A294D66061E9F310FFC9AC959C /* HTTPStream.swift */; };
+		1F708D3B60D9B9AC32A11E9DFFE77573 /* UtModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E06E216AB0F89FD23F45E37F7B09B16 /* UtModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FDF710A3858AC5E10DDBF0B4DDACB4F /* RTMPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7C85DCB9640B51797E5E899336AC2C /* RTMPStream.swift */; };
+		200409DCB760DAC5C62B56ECFADCCD16 /* VideoIOComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BE156AFB43E9C85B1CBA31F1A98E6 /* VideoIOComponent.swift */; };
+		225999783BC605B77DEC18D92CBB71A9 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC863C7B2F73575450E2FB01DA42AB64 /* HTTPRequest.swift */; };
+		24073CF471D6039B45648DF76A36AC18 /* ScreenCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDABE196078E3181A71C86895997715 /* ScreenCaptureSession.swift */; };
+		24706E78ABEA050CA7BF9460F8CAB264 /* UtDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 23039300574FC2A188B5B216B935764C /* UtDebug.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		24ACBEDF7F87C776C356719EAD37B29F /* TSWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22509DBE72CC2079BD4FE2C5A06DA4FD /* TSWriter.swift */; };
+		258DF8C4B6B316B2E396B0110DA26B45 /* UtFile.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4833141B28E076D8B75BC80502E5B5 /* UtFile.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		25DB6A91704D78A21F8DE7A3941903FD /* IBaseContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A28D7B481794C3F279A0F377516C86DA /* IBaseContext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2623E4E4DB487CC6D741EA0B1533F22E /* UtInterpolate.h in Headers */ = {isa = PBXBuildFile; fileRef = 619DC0F9F7865E1642F84486B597E506 /* UtInterpolate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		26C29584BB6CEC283ACC5012FAB6DE1E /* EyeBlinkMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9993892989FAA12078A96602745857 /* EyeBlinkMotion.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		27BAAD3F0FBC273D0BC879AF3C9F0A40 /* Logboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34175D22E72CD50286C49C9E0741A1E6 /* Logboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D7822543D77B1BCE4F8CCE745D0A2B2 /* LFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3AE274D1632375A0FB28D5F569BCF /* LFView.swift */; };
+		2E6BBE1506D2F68B08D95F6416DD66E8 /* TimerDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182810F80E1CFDDABF58222F1A701E1 /* TimerDriver.swift */; };
+		2E93FC14A3FC989DEAB1B8433EE334E5 /* FLVAudioCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5A25AAACADFD3548A88876D5A2BD0 /* FLVAudioCodec.swift */; };
+		2EF890E0CD14F3F8EBFE04183F3264F2 /* TYLive2D-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DABA245092B3FC6018B49FEBDC2D06 /* TYLive2D-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F04A676E11BFD8AB5799EB284C26314 /* NetSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7AA788FCF909A70FEEA7CBD24D1A7 /* NetSocket.swift */; };
+		2F2950AD25E994A2387B106B87A62662 /* RTMPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E1368C9766FEB807AD3B1891E6B63 /* RTMPSocket.swift */; };
+		2F599895ECE5FDE42A2A73823571196D /* FLVVideoCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DB2E6339849E1A0FFA3F210482A7F /* FLVVideoCodec.swift */; };
+		2F8AA5C2C201931277A649528E3367CD /* BDAffine.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DCA1E6911472C6D5D73014169CB321 /* BDAffine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2FC5902CB2CF2739309DC9D9FA65C9EE /* EventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C73E828DFCA8C734D6C04DEE6F6D76 /* EventDispatcher.swift */; };
+		30EE2DBE365BA6DE4C51ED0664756566 /* ParamDefFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F45A72A569EB5E837843F1400B2311 /* ParamDefFloat.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		311F28844CED02993FBC4FEA4442BD29 /* DrawProfileUnity.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C9BEBFF5FA81DAE9E49E182DF56EA4 /* DrawProfileUnity.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		314C60B70913895A1805EFDD2EDFE4C1 /* Arrays2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD2CECBBED14DE9BE2EAF3D2664B2E7 /* Arrays2D.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		31B109E3BDBF66EFE133D5CEF75D77A2 /* DEF.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E1510C219FBB224E327DA721445A61 /* DEF.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		33FD19FD87DD50D8565EC5A11134D819 /* Live2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD1AFF87DED893EC80938AEF2D0547 /* Live2D.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3402EC7686ECB7F785696817B9C20C73 /* MP4Sampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18149AED0973232DA4AAE31D5741F033 /* MP4Sampler.swift */; };
+		349D0AE0C3E455AE0FCFC1F4A5B1965B /* DrawProfileCocos2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF39B6F0ACD63EF345E44EBADDC2E23 /* DrawProfileCocos2D.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		35063E9C7C89587574A8A69F06FF84E4 /* Json.h in Headers */ = {isa = PBXBuildFile; fileRef = D3473D508E33440FFF830D3CB07305CE /* Json.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		37B49F81410C79B7AEAABBCFCFBF7295 /* NetStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF95549CD3525497BCF80C9D9C55A1 /* NetStream.swift */; };
+		385389B7A68051F6E3675CBC48942A83 /* Pods-DemoLivestream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C53B4BA43B8221A4E401948555B398DA /* Pods-DemoLivestream-dummy.m */; };
+		386CA2353268EF2CA88BABEF0B3D5F40 /* ByteArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38154E0D14D277C2631DF8CA6E65629 /* ByteArray.swift */; };
+		388BA95AC6F7B0C46A16C2E8365BFF0A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C59B38CFD25E26A4C62C90CC1D6F55 /* OpenGLES.framework */; };
+		3B00A6C2CD269574A56CBA8C2633DAA9 /* DrawParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A69596064F9B22CFE3296F3D4BDDE2 /* DrawParam.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C0ED98B6EC8757F0A8CCB03B839BC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */; };
+		3E155C801A0166AAFDCDDDF60E0E0493 /* UtMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DE617B689CCC770DA2B91BC13C6264 /* UtMotion.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3E55F7E5D94F061568EF8CD1F70D7EC4 /* CRC32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7295933CF0782A23F930505EEA716A5B /* CRC32.swift */; };
+		3F0CDB803B2E95BDA0DE8A6E81FF630D /* FLVSoundSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CF6D66D60031CA0CF560CC3EB7768 /* FLVSoundSize.swift */; };
+		3F12735064F3ABF485AB201AAAFA8EA4 /* ParamPivots.h in Headers */ = {isa = PBXBuildFile; fileRef = B0CC18A8A08885C624D77729FAD68648 /* ParamPivots.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3F1F36761A2D9EB4D78340D2BC04BB7E /* AudioSpecificConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8C90B5226BC32988CB568A218B207 /* AudioSpecificConfig.swift */; };
+		4221FDAEAC15055C030631D617BDF2CD /* IOComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E46C0267910E215C2AC30B4BA2D6567 /* IOComponent.swift */; };
+		42C3E1B56FD2C99E8A12662876B6DE3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */; };
+		42E3D32F612BE0CA7EA8D8CEA630B9DD /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E47749EF1DF43E33E6F72316F3FA7C /* Protocol.swift */; };
+		45CC92A99BE5AA6AFD1E02054FE384D6 /* IBaseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 21DEDA5BB10E44ECC28EFCC31DCFB93F /* IBaseData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4690474B042129802807739ED526742B /* BDBoxGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DE7AF7023E9008FA7BC4129FE60C18 /* BDBoxGrid.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		469D954D119405FA5B240A5F92B8C601 /* ByteBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 74BAE3D1A008AF8699156D3F954A63EC /* ByteBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4760DFB146EF2DEA9B737EBAD23E8D39 /* LDMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AC845FA2957DE942B784522818F31C5A /* LDMap.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4A326B0009C916EF1106D08B6B27BC01 /* BReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 614E609FBABBE72E498152BBCC59572E /* BReader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B6ECC03C4C9B132C26AD907FC396C93 /* SoundTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84FAC16D046418DFE56247EB75C3E3 /* SoundTransform.swift */; };
+		4C0E48F8A5DA4F5289DA2B919FE97C94 /* MachUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B179799EB0F9A004AC633BDA1CE0D8 /* MachUtil.swift */; };
+		4F201C43693F58346C1582483684D003 /* ModelContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A29DE8ACD630B62C40635D6F4A57CCEA /* ModelContext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4F3441A08A0D8B45DA74C2ABC2C76DD4 /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13FA1AE74E133CB87C4B535C8C037C5 /* CMSampleBuffer+Extension.swift */; };
+		4FAD6E7FB5C9B28FDD69DAE79A036A03 /* LDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E16B971D7E61C27F0534FD1896A21208 /* LDColor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		50F37D352B7063B03B8A48806D19DC54 /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7D3C47B89D6027EEF8AE049C5FBC7 /* NetService.swift */; };
+		51E7EE8A50E7D6639630094AE3200857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */; };
+		5303675E1DFE7D7D495869CAE290FDCF /* RTMPMuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB5B07F8CD37A27AD2CDF2D3E9FCE9B /* RTMPMuxer.swift */; };
+		537EEC7ECECC4955582637C98CF36688 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CCBA9ECD7E7F7A0FC9073091A38298 /* AudioUtil.swift */; };
+		54A6E7339D574459D4AEBAD8B2E307FF /* Logboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C9AD07EEFF853A066C1AFC49441FE /* Logboard.swift */; };
+		5706E7F3776942634A6B02FAFA2CFC21 /* VideoGravityUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9420A7340432F97A66D5597A096A0 /* VideoGravityUtil.swift */; };
+		59205BF3BE152E7F8AA938476DB48105 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C37EA9BDEFBE7F38E7D114E8ABAC4 /* MD5.swift */; };
+		5C1657E1EB38D7DB6F6553F1DC2EDAF7 /* ASClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB595BDC173723E290303FEB059884 /* ASClass.swift */; };
+		5CF0CA28B6D18DF1B4F203061CFBD833 /* LDAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02EA9B4F2B925FFA849F7BD7A84A8D4E /* LDAllocator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D94BC237E84BA0D1EEE589BBB904982 /* TYLive2DView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28CF71D83D61F41BF37A019D3C7BA197 /* TYLive2DView.mm */; };
+		6029009E4882F3B03E6562778F0C0515 /* FLVSoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081236D93D987F16DE711D04724772D /* FLVSoundType.swift */; };
+		60E8083FEB1C484C846126F30D6D42A5 /* AVMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543B68824A39398E04421F96BC15921 /* AVMixer.swift */; };
+		6195CDD7E756032E4D0C9832659D8172 /* ClockedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45995D4C6D15DBD4B2D647885D61DAB /* ClockedQueue.swift */; };
+		642BFB3B37FFADB430A9DD8084536242 /* TYLive2D-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90B0418231BD9ABBA92BC6BF4C8DA2 /* TYLive2D-dummy.m */; };
+		653C08D421E826D536B1643EC4179681 /* TYLive2DView.h in Headers */ = {isa = PBXBuildFile; fileRef = 598B511CF37C63AD16602A4C5F32A263 /* TYLive2DView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DF1B8101118928C73B2B7AC152D182 /* ParamDefSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FC02B4C4F0797C75466D136EB6322BF5 /* ParamDefSet.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6920DADEA95241B39A071439DE1E4D4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */; };
+		6970459A555AFBF2B767479C931A88DA /* DeviceUtil+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0699DD8C906CD51BD25915FC63E4FA /* DeviceUtil+Extenstion.swift */; };
+		6A17AD275A16E4BB1FA09A19CAD7C4D5 /* MotionQueueEnt.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE3B1D47127C36BB8A06D907546F6B7 /* MotionQueueEnt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6A7E551ABA94336DBB3A33201363B070 /* PhysicsHair.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D8C8127C13C2681C787E7D6E221510C /* PhysicsHair.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6BCFDCB38416DCE768CAF3BE311E5747 /* APageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 996B13CBCAD041DD5C0ECE95F77658E1 /* APageHeader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6BE7F412118187F732EB913FD2F4E3F8 /* AnyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EB01343406AAC136BE1FDF5D63F55 /* AnyUtil.swift */; };
+		6D32DFCA3733C935E7CCAD08638FCA9F /* Logboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 455A952F9F20AF8027B84F41BA987111 /* Logboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D5486C65A347D2225A643398ACC6A14 /* CMBlockBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265308843A1B272A38D6B91CAC72DFF /* CMBlockBuffer+Extension.swift */; };
+		6D6B08A63246E2B089D44EF3B49419CB /* ParamID.h in Headers */ = {isa = PBXBuildFile; fileRef = D19EAF67D80431224AF34249D68C7B0B /* ParamID.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6DE2AC13A2E5551389E6E2D5455C589B /* H264Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64A84C2D9FAF99DE2111DEFED30DBC6 /* H264Encoder.swift */; };
+		6E78D97BCEAADC0335474193F33E40B9 /* LDAffineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 656E83F5930A00E31D07D85C9C5E8A39 /* LDAffineTransform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6EF4F0904D3D3C61200C8474E12128DF /* NALUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A813DF8CE4D638A44614CA6478F787 /* NALUnit.swift */; };
+		6F4D15858955B373B07F2D56D49D6F85 /* FLVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6CF24A49813E7B5694A25E0F87F2E /* FLVReader.swift */; };
+		70052ECAF0CEAF468BC3AE78ED62E60A /* FLVSoundRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D723A6BF34154386034FCEEB5F8F9 /* FLVSoundRate.swift */; };
+		715671395D04F73D3AC9F285B6FFE108 /* LDUnmanagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 75095E884AD62D10A51D5692A222C153 /* LDUnmanagedObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7249F66DCF9EC7E38BDD8A71496A3E09 /* MHPageHeaderTmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 858262B519F825264908698C076BF3D9 /* MHPageHeaderTmp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		72C7DB1A06C1995E543CFB1E1AEDF9CB /* AMF3Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09747F10F20DD936F32FF9940ACE1AF2 /* AMF3Serializer.swift */; };
+		738F889F292E5C0C86619E1DFB279024 /* ISerializableV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D1DD9DBEC0B04006AF9C7391A8FCE8 /* ISerializableV2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		74AD2B9306EF5BDF176D255759F936F7 /* LDRect.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C48723A2F207A74FB610815CCA75B6 /* LDRect.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		74FD6F4DFBE043A1B643765BF7711612 /* SocketAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147EA5AF1962C5BA8993689BB60E64B /* SocketAppender.swift */; };
+		773447D01D82F1D0D477621847C128AB /* Logboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3600BA3E478A6A329C102FB01B05401 /* Logboard.framework */; };
+		7A19E26B26EFC128355DD1257D6C7A3A /* RTMPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C12FDCF16AA407203BE7205D28E93A /* RTMPMessage.swift */; };
+		7A3F19C0A693D2B95EDABD298DDC7FE4 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2DA258C4BC9CCBBAFEDA0FFA01F2B9 /* URL+Extension.swift */; };
+		7D30DC9319844EF4D126EC7C9ADDE653 /* AMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 380205737CAA3D5153EDC8F6BE571849 /* AMotion.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E91FF2BA9346189731782F0E24ADA77 /* VisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1921B4E9BD6D5340F4A8480B07D24D2 /* VisualEffect.swift */; };
+		80137597E8E98CEB2755C71DFDF9390F /* GLLFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96B061E72A80C4FF19CB15569B3646 /* GLLFView.swift */; };
+		8064C4B69EFDAB8E09C5146BC065BA18 /* DeviceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3058F94BA025F6BDE720142296E6605E /* DeviceUtil.swift */; };
+		80ABA9218EA0617134AF240A5157E293 /* Mirror+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1576F3841E74B54679DD686256B7E /* Mirror+Extension.swift */; };
+		817C2AE5821B40424B6E19E0A2AE1E5D /* TYLive2DModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC40E03782B70141153AFBF44FE7ED6E /* TYLive2DModel.m */; };
+		84276089765E96226A793FC7371EE87A /* MultiAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029795F938DC152862E6B07E1EFCA82C /* MultiAppender.swift */; };
+		845CE2647028AD23873B83C26032E071 /* MP4Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B54B1498577C11F33FDC8B703FF87C /* MP4Reader.swift */; };
+		867889956A9CA100479BEF56C335751A /* IDrawContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1209AF13EE39DC9C9372230943244CB2 /* IDrawContext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		86CDCAB63A6F4BAD7A6CFA9F0A86CA2C /* DrawParam_OpenGLES1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C67B979A363567DB21803E3FE5BEFB /* DrawParam_OpenGLES1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		875E2876BAEE6C11A45897397B4573EA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A541F4725C10103999616A5F07108E /* GLKit.framework */; };
+		882F4A2CE033FD28AB2B87BB5C75EDF9 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3551C35765A8A8D8E1DBCB4EC18E /* Mutex.swift */; };
+		8B8CB8F596E64082DF42ADF4907537C1 /* CMFormatDescription+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27239A03641378C9D2C386E83C35D65 /* CMFormatDescription+Extension.swift */; };
+		8BAA993698DAD3B67439C552876C7C20 /* AMF0Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E136AE97A94C68CCD808FEBA20B8C0 /* AMF0Serializer.swift */; };
+		8D0C2AE40557D416F2E7909282047C9A /* LDPointF.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E108E6B4B35C292170F05597A2B7749 /* LDPointF.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8EB41A23E88185B59FB43427E5E3BAA3 /* M3U.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913029657C709D587441DC306FB79CD /* M3U.swift */; };
+		90A9CA675C57FE965822D50A30143627 /* UtMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA0723CE63F40709E52F3DCE79FD6E8 /* UtMemory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9228E96B76D05F9254B6008EC2CED777 /* DrawDataID.h in Headers */ = {isa = PBXBuildFile; fileRef = F075CB16E33FD6D04E7370BA8C901802 /* DrawDataID.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9452C1AFE804ABC50E7C5BADB9223082 /* MotionQueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD0EAF1EE2E65181094E89020F1B584 /* MotionQueueManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		957A29982F9AE71E3A8A169771C77962 /* H264+AVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D74CF454D65D9AF3F752FCEF21172 /* H264+AVC.swift */; };
+		96A20EA16EB05D9B37407A1BB29111EA /* FLVAVCPacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD94B969E9D5D2CD9124E45EEC9244C /* FLVAVCPacketType.swift */; };
+		98D469A74AF9D8548B88202389C26C22 /* RefString.h in Headers */ = {isa = PBXBuildFile; fileRef = 560DBEDC019E8FFD2D836B79577C6825 /* RefString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		98FF59428EBC8B15B5106FA99EED05F5 /* PivotManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1253D49616DEAD27F2ED35BA05BB3F92 /* PivotManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9AF111B4D1175BE9178471D70789BACE /* NetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD4E21E2CE0A86A1522E30A86215F8 /* NetClient.swift */; };
+		9AF21DB500A0E30786F2CED967059998 /* HaishinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E44622CF2BC53F5E7545759A84BB8768 /* HaishinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA5D1CAE0F173DC6116C5FE48CAB9E4 /* HaishinKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 016E9C4112D96AF680E861672CFE2CD8 /* HaishinKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A27EB75D410922BC2E791452414CF284 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6211EBA23FBF772E83D7DB3E441B12 /* Data+Extension.swift */; };
+		A4DB340E7F01DA0B2B4B17475FE3D2E6 /* CVPixelBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033539E760F77AB60B1532E6C165E8B4 /* CVPixelBuffer+Extension.swift */; };
+		A5DF123F71D0AB84B0118EAA6C8414ED /* ModelImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E9C98834039EEA0C66D19106838CF2 /* ModelImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A5F67C7BE6C2399A51EDC0586FD25B17 /* ProgramSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82717F27EDD0F40DF9C649ADA411222 /* ProgramSpecific.swift */; };
+		A7663678ABD526FBF64267134DAFB105 /* RTMPStreamQoSDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C9BCE4D40807BA654BEF32FC42FA1 /* RTMPStreamQoSDelagate.swift */; };
+		A77FB471B08EBF951C2334BF25EF9AC5 /* RTMPChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F7E647F65DA4BE769E691A104F877 /* RTMPChunk.swift */; };
+		ABA8BBCC87F4D8A667853E9E4466879F /* Logboard.Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD59FBAEF16D3B5D5803E128C920C3F /* Logboard.Data.swift */; };
+		AC4D1E2CE723C14823579FE022586766 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9A02236E76EAD55CE6724A91836D1C /* HTTPService.swift */; };
+		ACDE0EA7B262C2F0F34BFF1C223D190B /* RTMPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A84200A516EE4E58E7436089C5140 /* RTMPConnection.swift */; };
+		AD36A02FB90BF4E800188B0B166C2D09 /* CMVideoFormatDescription+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72D44E8789E79D7BF0ABACD78D6EF4A /* CMVideoFormatDescription+Extension.swift */; };
+		AF8D0B81BBBA211B3AF7B9ABB9CAB1FC /* AudioStreamPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3745A1AFDB5EB0BA6CF4477F25B97 /* AudioStreamPlayback.swift */; };
+		AFD337AEE15D2F897728BCAE51DFD355 /* PartsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BD0472262A7BFECD1D2E2F9E8C682F /* PartsData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B0721BFB2F08EEEA6DE6162A595B4404 /* Pods-DemoLivestream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 791175AD6D35B9FA9F5DD833B994E2D0 /* Pods-DemoLivestream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6848EA43E17AA91B697774460C202A1 /* LDPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 052C746F7810A72E9FB0E552C8907BA7 /* LDPoint.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BA9CE49B2A6A7900B475A47FE2461382 /* Live2DMotionBin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC98CD3CD48AEEC8C275F7AF6E183AB /* Live2DMotionBin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BACFD7C2BCD622A2F8E0D27EC89B2524 /* UtSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB06D3379A549603EC7585D04349B59 /* UtSystem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BD9FC8C9F44B424BB00CE2D89078B205 /* PhysicsParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1D9576F3ED43FB58B482528DCE04FE /* PhysicsParams.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BF9AD59FCF064179EC580BC92F17693F /* UtArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A64F7B1896858B7FE8DAA8EB63434C69 /* UtArray.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C0E90AEAAB83E3506AFDC1C3377A481A /* UtMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 0040D115B0AA0214CD157548E8F3E7EC /* UtMath.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C2062BF51D878681C280A4FE271DF0C7 /* Logboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA58F597F87FF76BDFE043540C4D045 /* Logboard-dummy.m */; };
+		C243D70624AEB50F604BD8F3984A1C8B /* CMSampleTimingInfo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CCBBBEEAE50B5D30F9CDA4A80AD80 /* CMSampleTimingInfo+Extension.swift */; };
+		C4078BA5676EB19BE42FE41E7D8F56FC /* LDString.h in Headers */ = {isa = PBXBuildFile; fileRef = C405A9479B7BFA54D5F9731EA489B947 /* LDString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C7C8EB2632D7E3D493797A46E1AB2C70 /* RTMPTSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736466524EF9BDA0AC99628979E7CDC /* RTMPTSocket.swift */; };
+		C82BA880A24C0AE7506BD8CF21163AD8 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5589A2D284BE2396150F387F334DB /* HTTPResponse.swift */; };
+		CB15B90DA009A996660B9D8CA45F4C14 /* LDObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF0BE77DB04DD4ECF96239598D94591 /* LDObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D128C797A78AAE5612B619E22F8EAF2B /* VideoIOComponent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEAD919329792B75B3602A306009ED /* VideoIOComponent+Extension.swift */; };
+		D14B6E3FC80636707BDC836D3FFEC96B /* FileFormat2.h in Headers */ = {isa = PBXBuildFile; fileRef = 387ABD70B3330E114EEE498DD35801A1 /* FileFormat2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D4D94F5DCAE88DEE72194250AA0564C9 /* AvatarPartsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18921B4F3BA746453C56A40926F544 /* AvatarPartsItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D877B986D65C5B7190A151F5A9A5EB0E /* TYLive2DModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C777E82C94B0F9E65BD3419C82035E1 /* TYLive2DModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC8FEEEC04A29F3888A94CBF34058D4 /* SoundSpliter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD423AC8D3E19C9B962E033B92B23835 /* SoundSpliter.swift */; };
+		DB1AB0680A5E885C5F782DC1832DB8ED /* ExpressibleByIntegerLiteral+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AEFE85D272BE7B56EDC2610E2033C1 /* ExpressibleByIntegerLiteral+Extension.swift */; };
+		E07CD3752DEC4E51F5A195BA8AA8DD3B /* AudioIOComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DFA31886243F4D42FDAB66CE18EB9 /* AudioIOComponent.swift */; };
+		E34D5BF3C40AFB19402B175F407DA020 /* TransportStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF19D68E26EEAA79F10FB298746A9BF /* TransportStream.swift */; };
+		E7AC407E286C477F2A8A3B332DEF5479 /* LogboardAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0F0EDC828C7FEC10328254DE9FF /* LogboardAppender.swift */; };
+		E97568E27C7D31CCAE556794CA8A8299 /* MIME.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6876ACFF7961A2FA49081FE0A8E962 /* MIME.swift */; };
+		EA281256428258DCD20E1880F5AF8156 /* AACEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139E5B4778DD3B4392E5DE8DB18AABB /* AACEncoder.swift */; };
+		EAAB5D4E59B6AE55E7EDC3F3C31F9CF7 /* HaishinKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FC889C6C7005213C4D9EF55781DF08 /* HaishinKit-dummy.m */; };
+		EDFB5EC607DDB20A8C808ECC6CD1AB24 /* TYLive2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB2A0869DD46260E3AA67A40AEAA545 /* TYLive2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F02D201E0F90FEC0C766E0D16039EE6A /* AVMixerRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF22A6D7B234E0CE7855F47D1617ED /* AVMixerRecorder.swift */; };
+		F04A3AF4E332C17C38B77699E07FEDBB /* DDTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE44D5F5723E655540C3335B9561673 /* DDTexture.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F1FD0E0AAF0A9F5D93E38D1DE7D23B77 /* MemoryInfoSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C3899ACE0B300AB44F2DBBECD8B71EFF /* MemoryInfoSet.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F2A5ED9132B39BD1954B6399AAA72C93 /* BaseDataID.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CD9C915F173AEF0A2BA9C61773F3C5 /* BaseDataID.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F3363D7672D9E7AC8A591E66F5707E0F /* MemoryHolderTmp.h in Headers */ = {isa = PBXBuildFile; fileRef = A799B9F5774148FEA913EB291BC9A4CF /* MemoryHolderTmp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F3FE05392973BEBDDDF0B56DE1E40408 /* RTMPHandshake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD30BF374B725F1875259DF1C422FD /* RTMPHandshake.swift */; };
+		F636C78D5B0AF43AB734CD81C0F9B2D4 /* FLVAACPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09DB2FC86CBA7169DE74FB1C395AE5B /* FLVAACPacket.swift */; };
+		F667ACBDED2E987D40D47006DC2F3DD4 /* ALive2DModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0EDD89EDA039FAE4505ECEE34292ED /* ALive2DModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F670FD82EBD763C315C50D9AACB0BD1D /* CMAudioFormatDescription+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61F003BBA008906D6C326984934803 /* CMAudioFormatDescription+Extension.swift */; };
+		F77A35C14894B6720F1A170567A00361 /* ConsoleAppender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE169F756DDF5FE2F29CAE0BF34E846 /* ConsoleAppender.swift */; };
+		F8C57CD6A8B9A432188511A59CA533C5 /* H264Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4652D6F2BD0DA32453372DE0EC84D5CB /* H264Decoder.swift */; };
+		FA47E2DC2D0F682374205742C0C33DF2 /* UtOS_iPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE1AE9862D2856BC1174D2B7BE7A351 /* UtOS_iPhone.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FA5D85040BABA8403B187622EB5508A6 /* UtOpenGLDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E222F4E155173C96A1604E4BEB24B8 /* UtOpenGLDebug.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FF96605549792D500E47E71422860FB0 /* FLVFrameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902E23ED9FB2F319995152CB0644A9FB /* FLVFrameType.swift */; };
+		FFF8D237263A9C8DE9429619A97F2BE5 /* AffineEnt.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAC01F5CFD005BAF2F85D25452FCEAD /* AffineEnt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C3F895084BAF1F034BD59C842F6F418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C432089C16F4B52C64A0AD2FBC20DE;
+			remoteInfo = TYLive2D;
+		};
+		8290DC746DAB300024EDDD72240BC21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6FEF78277C0AE9BB8D3192E3EBECF79;
+			remoteInfo = HaishinKit;
+		};
+		9818B23AC245B67C3873A74BFEEA05BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C81450ADE974DF9DE925B53D0A08A90;
+			remoteInfo = Logboard;
+		};
+		9F246924DCA6323282EB3A91A91E8AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C81450ADE974DF9DE925B53D0A08A90;
+			remoteInfo = Logboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0040D115B0AA0214CD157548E8F3E7EC /* UtMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtMath.h; path = TYLive2D/Live2D/include/util/UtMath.h; sourceTree = "<group>"; };
+		016E9C4112D96AF680E861672CFE2CD8 /* HaishinKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaishinKit-umbrella.h"; sourceTree = "<group>"; };
+		029795F938DC152862E6B07E1EFCA82C /* MultiAppender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiAppender.swift; path = Sources/MultiAppender.swift; sourceTree = "<group>"; };
+		02EA9B4F2B925FFA849F7BD7A84A8D4E /* LDAllocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDAllocator.h; path = TYLive2D/Live2D/include/memory/LDAllocator.h; sourceTree = "<group>"; };
+		033539E760F77AB60B1532E6C165E8B4 /* CVPixelBuffer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CVPixelBuffer+Extension.swift"; path = "Sources/Extension/CVPixelBuffer+Extension.swift"; sourceTree = "<group>"; };
+		052C746F7810A72E9FB0E552C8907BA7 /* LDPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDPoint.h; path = TYLive2D/Live2D/include/type/LDPoint.h; sourceTree = "<group>"; };
+		05D1DD9DBEC0B04006AF9C7391A8FCE8 /* ISerializableV2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISerializableV2.h; path = TYLive2D/Live2D/include/io/ISerializableV2.h; sourceTree = "<group>"; };
+		09747F10F20DD936F32FF9940ACE1AF2 /* AMF3Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMF3Serializer.swift; path = Sources/RTMP/AMF3Serializer.swift; sourceTree = "<group>"; };
+		0AE9F1B947227E8D6943D5BD0FB5092E /* Pods-DemoLivestream-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoLivestream-frameworks.sh"; sourceTree = "<group>"; };
+		0B96B061E72A80C4FF19CB15569B3646 /* GLLFView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLLFView.swift; path = Platforms/iOS/GLLFView.swift; sourceTree = "<group>"; };
+		0BD2CECBBED14DE9BE2EAF3D2664B2E7 /* Arrays2D.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Arrays2D.h; path = TYLive2D/Live2D/include/io/data/Arrays2D.h; sourceTree = "<group>"; };
+		0FD5589A2D284BE2396150F387F334DB /* HTTPResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResponse.swift; path = Sources/HTTP/HTTPResponse.swift; sourceTree = "<group>"; };
+		1209AF13EE39DC9C9372230943244CB2 /* IDrawContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDrawContext.h; path = TYLive2D/Live2D/include/draw/IDrawContext.h; sourceTree = "<group>"; };
+		1253D49616DEAD27F2ED35BA05BB3F92 /* PivotManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PivotManager.h; path = TYLive2D/Live2D/include/param/PivotManager.h; sourceTree = "<group>"; };
+		14CD1AFF87DED893EC80938AEF2D0547 /* Live2D.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Live2D.h; path = TYLive2D/Live2D/include/Live2D.h; sourceTree = "<group>"; };
+		15E136AE97A94C68CCD808FEBA20B8C0 /* AMF0Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMF0Serializer.swift; path = Sources/RTMP/AMF0Serializer.swift; sourceTree = "<group>"; };
+		18149AED0973232DA4AAE31D5741F033 /* MP4Sampler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MP4Sampler.swift; path = Sources/ISO/MP4Sampler.swift; sourceTree = "<group>"; };
+		1A90B0418231BD9ABBA92BC6BF4C8DA2 /* TYLive2D-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYLive2D-dummy.m"; sourceTree = "<group>"; };
+		1B325A32B172EFD4AE2811B1EA9ADBB9 /* TYLive2D.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TYLive2D.modulemap; sourceTree = "<group>"; };
+		1CC98CD3CD48AEEC8C275F7AF6E183AB /* Live2DMotionBin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Live2DMotionBin.h; path = TYLive2D/Live2D/include/motion/Live2DMotionBin.h; sourceTree = "<group>"; };
+		1EE1AE9862D2856BC1174D2B7BE7A351 /* UtOS_iPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtOS_iPhone.h; path = TYLive2D/Live2D/include/util/UtOS_iPhone.h; sourceTree = "<group>"; };
+		1FFEAD919329792B75B3602A306009ED /* VideoIOComponent+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VideoIOComponent+Extension.swift"; path = "Platforms/iOS/VideoIOComponent+Extension.swift"; sourceTree = "<group>"; };
+		200EB01343406AAC136BE1FDF5D63F55 /* AnyUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUtil.swift; path = Sources/Util/AnyUtil.swift; sourceTree = "<group>"; };
+		20104DE25BF9D1C6364150891A54A69A /* HaishinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HaishinKit.framework; path = HaishinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C0FD550B9E0E15E2FD2DE822E77C65 /* Logboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Logboard.framework; path = Logboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2147EA5AF1962C5BA8993689BB60E64B /* SocketAppender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAppender.swift; path = Sources/SocketAppender.swift; sourceTree = "<group>"; };
+		21DEDA5BB10E44ECC28EFCC31DCFB93F /* IBaseData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBaseData.h; path = TYLive2D/Live2D/include/base/IBaseData.h; sourceTree = "<group>"; };
+		22509DBE72CC2079BD4FE2C5A06DA4FD /* TSWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSWriter.swift; path = Sources/ISO/TSWriter.swift; sourceTree = "<group>"; };
+		23039300574FC2A188B5B216B935764C /* UtDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtDebug.h; path = TYLive2D/Live2D/include/util/UtDebug.h; sourceTree = "<group>"; };
+		267474429B129CEA2AB59FCCD90BF0B5 /* MHBin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHBin.h; path = TYLive2D/Live2D/include/memory/tmp/MHBin.h; sourceTree = "<group>"; };
+		28CF71D83D61F41BF37A019D3C7BA197 /* TYLive2DView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = TYLive2DView.mm; path = TYLive2D/Classes/TYLive2DView.mm; sourceTree = "<group>"; };
+		295842465BA8BB00881DEAE9A8C8064C /* MemoryHolderFixed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryHolderFixed.h; path = TYLive2D/Live2D/include/memory/fixed/MemoryHolderFixed.h; sourceTree = "<group>"; };
+		2A6876ACFF7961A2FA49081FE0A8E962 /* MIME.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MIME.swift; path = Sources/Net/MIME.swift; sourceTree = "<group>"; };
+		2A8AEFF67FFC0E35309AC6E2D5C194B1 /* Pods-DemoLivestream-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoLivestream-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C6E1368C9766FEB807AD3B1891E6B63 /* RTMPSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPSocket.swift; path = Sources/RTMP/RTMPSocket.swift; sourceTree = "<group>"; };
+		2D18921B4F3BA746453C56A40926F544 /* AvatarPartsItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AvatarPartsItem.h; path = TYLive2D/Live2D/include/avatar/AvatarPartsItem.h; sourceTree = "<group>"; };
+		2E06E216AB0F89FD23F45E37F7B09B16 /* UtModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtModel.h; path = TYLive2D/Live2D/include/model/UtModel.h; sourceTree = "<group>"; };
+		2F445176BB6375167FBF1516A6C92D15 /* PartsDataID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PartsDataID.h; path = TYLive2D/Live2D/include/id/PartsDataID.h; sourceTree = "<group>"; };
+		3058F94BA025F6BDE720142296E6605E /* DeviceUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceUtil.swift; path = Sources/Util/DeviceUtil.swift; sourceTree = "<group>"; };
+		30F1576F3841E74B54679DD686256B7E /* Mirror+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mirror+Extension.swift"; path = "Sources/Extension/Mirror+Extension.swift"; sourceTree = "<group>"; };
+		34175D22E72CD50286C49C9E0741A1E6 /* Logboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logboard-umbrella.h"; sourceTree = "<group>"; };
+		34D7D3C47B89D6027EEF8AE049C5FBC7 /* NetService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetService.swift; path = Sources/Net/NetService.swift; sourceTree = "<group>"; };
+		37FC889C6C7005213C4D9EF55781DF08 /* HaishinKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HaishinKit-dummy.m"; sourceTree = "<group>"; };
+		380205737CAA3D5153EDC8F6BE571849 /* AMotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMotion.h; path = TYLive2D/Live2D/include/motion/AMotion.h; sourceTree = "<group>"; };
+		387ABD70B3330E114EEE498DD35801A1 /* FileFormat2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileFormat2.h; path = TYLive2D/Live2D/include/io/FileFormat2.h; sourceTree = "<group>"; };
+		3913029657C709D587441DC306FB79CD /* M3U.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M3U.swift; path = Sources/HTTP/M3U.swift; sourceTree = "<group>"; };
+		39D368D36AEB55555B996624B72628B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0EDD89EDA039FAE4505ECEE34292ED /* ALive2DModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALive2DModel.h; path = TYLive2D/Live2D/include/ALive2DModel.h; sourceTree = "<group>"; };
+		3C5A84200A516EE4E58E7436089C5140 /* RTMPConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPConnection.swift; path = Sources/RTMP/RTMPConnection.swift; sourceTree = "<group>"; };
+		3CABAB300D316FB1D5B2A08627DD9B7C /* LDRectF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDRectF.h; path = TYLive2D/Live2D/include/type/LDRectF.h; sourceTree = "<group>"; };
+		3E108E6B4B35C292170F05597A2B7749 /* LDPointF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDPointF.h; path = TYLive2D/Live2D/include/type/LDPointF.h; sourceTree = "<group>"; };
+		3EDD4E21E2CE0A86A1522E30A86215F8 /* NetClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetClient.swift; path = Sources/Net/NetClient.swift; sourceTree = "<group>"; };
+		3F1D9576F3ED43FB58B482528DCE04FE /* PhysicsParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhysicsParams.h; path = TYLive2D/Live2D/include/physics/PhysicsParams.h; sourceTree = "<group>"; };
+		400CF6D66D60031CA0CF560CC3EB7768 /* FLVSoundSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVSoundSize.swift; path = Sources/FLV/FLVSoundSize.swift; sourceTree = "<group>"; };
+		4026195D32D666DA75C6C949FAC8D2CC /* ID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ID.h; path = TYLive2D/Live2D/include/id/ID.h; sourceTree = "<group>"; };
+		420F7E647F65DA4BE769E691A104F877 /* RTMPChunk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPChunk.swift; path = Sources/RTMP/RTMPChunk.swift; sourceTree = "<group>"; };
+		42C9BEBFF5FA81DAE9E49E182DF56EA4 /* DrawProfileUnity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawProfileUnity.h; path = TYLive2D/Live2D/include/graphics/DrawProfileUnity.h; sourceTree = "<group>"; };
+		455A952F9F20AF8027B84F41BA987111 /* Logboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logboard.h; path = Platforms/iOS/Logboard.h; sourceTree = "<group>"; };
+		4652D6F2BD0DA32453372DE0EC84D5CB /* H264Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H264Decoder.swift; path = Sources/Codec/H264Decoder.swift; sourceTree = "<group>"; };
+		46BD0472262A7BFECD1D2E2F9E8C682F /* PartsData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PartsData.h; path = TYLive2D/Live2D/include/model/PartsData.h; sourceTree = "<group>"; };
+		47B3AE274D1632375A0FB28D5F569BCF /* LFView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LFView.swift; path = Platforms/iOS/LFView.swift; sourceTree = "<group>"; };
+		49F07941CCDA2801E960F6C232032592 /* TYLive2D.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = TYLive2D.mm; path = TYLive2D/Classes/TYLive2D.mm; sourceTree = "<group>"; };
+		4ABEB8EE5C5A16188AA63AF0711C0AB1 /* RTMPSharedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPSharedObject.swift; path = Sources/RTMP/RTMPSharedObject.swift; sourceTree = "<group>"; };
+		4CE169F756DDF5FE2F29CAE0BF34E846 /* ConsoleAppender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleAppender.swift; path = Sources/ConsoleAppender.swift; sourceTree = "<group>"; };
+		4D8C8127C13C2681C787E7D6E221510C /* PhysicsHair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PhysicsHair.h; path = TYLive2D/Live2D/include/physics/PhysicsHair.h; sourceTree = "<group>"; };
+		4E6211EBA23FBF772E83D7DB3E441B12 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/Extension/Data+Extension.swift"; sourceTree = "<group>"; };
+		4F24E181259E8BD2DC51E8541C98F7AC /* Pods-DemoLivestream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoLivestream.release.xcconfig"; sourceTree = "<group>"; };
+		4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4FBB595BDC173723E290303FEB059884 /* ASClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASClass.swift; path = Sources/RTMP/ASClass.swift; sourceTree = "<group>"; };
+		5139E5B4778DD3B4392E5DE8DB18AABB /* AACEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AACEncoder.swift; path = Sources/Codec/AACEncoder.swift; sourceTree = "<group>"; };
+		5182810F80E1CFDDABF58222F1A701E1 /* TimerDriver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimerDriver.swift; path = Sources/Util/TimerDriver.swift; sourceTree = "<group>"; };
+		52D0D4EFF4EB7952277E0E9AF1886DB5 /* MHPageHeaderFixed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHPageHeaderFixed.h; path = TYLive2D/Live2D/include/memory/fixed/MHPageHeaderFixed.h; sourceTree = "<group>"; };
+		53A69596064F9B22CFE3296F3D4BDDE2 /* DrawParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawParam.h; path = TYLive2D/Live2D/include/graphics/DrawParam.h; sourceTree = "<group>"; };
+		53C5A25AAACADFD3548A88876D5A2BD0 /* FLVAudioCodec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVAudioCodec.swift; path = Sources/FLV/FLVAudioCodec.swift; sourceTree = "<group>"; };
+		54C12FDCF16AA407203BE7205D28E93A /* RTMPMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPMessage.swift; path = Sources/RTMP/RTMPMessage.swift; sourceTree = "<group>"; };
+		5543B68824A39398E04421F96BC15921 /* AVMixer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVMixer.swift; path = Sources/Media/AVMixer.swift; sourceTree = "<group>"; };
+		560DBEDC019E8FFD2D836B79577C6825 /* RefString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RefString.h; path = TYLive2D/Live2D/include/io/RefString.h; sourceTree = "<group>"; };
+		56DABA245092B3FC6018B49FEBDC2D06 /* TYLive2D-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYLive2D-umbrella.h"; sourceTree = "<group>"; };
+		5736466524EF9BDA0AC99628979E7CDC /* RTMPTSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPTSocket.swift; path = Sources/RTMP/RTMPTSocket.swift; sourceTree = "<group>"; };
+		57D4D86706A995FBEE23DB6C8E99A35D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		598B511CF37C63AD16602A4C5F32A263 /* TYLive2DView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLive2DView.h; path = TYLive2D/Classes/TYLive2DView.h; sourceTree = "<group>"; };
+		5994F98C75944CC67334A75B8ADB0368 /* HaishinKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HaishinKit.xcconfig; sourceTree = "<group>"; };
+		5AA6CF24A49813E7B5694A25E0F87F2E /* FLVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVReader.swift; path = Sources/FLV/FLVReader.swift; sourceTree = "<group>"; };
+		5BB2A0869DD46260E3AA67A40AEAA545 /* TYLive2D.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLive2D.h; path = TYLive2D/Classes/TYLive2D.h; sourceTree = "<group>"; };
+		5DF0BE77DB04DD4ECF96239598D94591 /* LDObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDObject.h; path = TYLive2D/Live2D/include/memory/LDObject.h; sourceTree = "<group>"; };
+		5FFF95549CD3525497BCF80C9D9C55A1 /* NetStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetStream.swift; path = Sources/Net/NetStream.swift; sourceTree = "<group>"; };
+		614E609FBABBE72E498152BBCC59572E /* BReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BReader.h; path = TYLive2D/Live2D/include/io/BReader.h; sourceTree = "<group>"; };
+		619DC0F9F7865E1642F84486B597E506 /* UtInterpolate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtInterpolate.h; path = TYLive2D/Live2D/include/util/UtInterpolate.h; sourceTree = "<group>"; };
+		64EF22A6D7B234E0CE7855F47D1617ED /* AVMixerRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVMixerRecorder.swift; path = Sources/Media/AVMixerRecorder.swift; sourceTree = "<group>"; };
+		656E83F5930A00E31D07D85C9C5E8A39 /* LDAffineTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDAffineTransform.h; path = TYLive2D/Live2D/include/type/LDAffineTransform.h; sourceTree = "<group>"; };
+		68297844781827CDD6C056B021A4568A /* Live2DMotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Live2DMotion.h; path = TYLive2D/Live2D/include/motion/Live2DMotion.h; sourceTree = "<group>"; };
+		688D723A6BF34154386034FCEEB5F8F9 /* FLVSoundRate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVSoundRate.swift; path = Sources/FLV/FLVSoundRate.swift; sourceTree = "<group>"; };
+		6A8C602A7D4CACC7657E3ED0029066FC /* Logboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logboard-prefix.pch"; sourceTree = "<group>"; };
+		6E4DFA31886243F4D42FDAB66CE18EB9 /* AudioIOComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioIOComponent.swift; path = Sources/Media/AudioIOComponent.swift; sourceTree = "<group>"; };
+		716B36E38497AF045B9556194EA8EC39 /* Pods-DemoLivestream-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoLivestream-acknowledgements.plist"; sourceTree = "<group>"; };
+		71B3745A1AFDB5EB0BA6CF4477F25B97 /* AudioStreamPlayback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioStreamPlayback.swift; path = Sources/Media/AudioStreamPlayback.swift; sourceTree = "<group>"; };
+		71DCA1E6911472C6D5D73014169CB321 /* BDAffine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDAffine.h; path = TYLive2D/Live2D/include/base/BDAffine.h; sourceTree = "<group>"; };
+		7295933CF0782A23F930505EEA716A5B /* CRC32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC32.swift; path = Sources/Util/CRC32.swift; sourceTree = "<group>"; };
+		72AEFE85D272BE7B56EDC2610E2033C1 /* ExpressibleByIntegerLiteral+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ExpressibleByIntegerLiteral+Extension.swift"; path = "Sources/Extension/ExpressibleByIntegerLiteral+Extension.swift"; sourceTree = "<group>"; };
+		742D74CF454D65D9AF3F752FCEF21172 /* H264+AVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "H264+AVC.swift"; path = "Sources/ISO/H264+AVC.swift"; sourceTree = "<group>"; };
+		74BAE3D1A008AF8699156D3F954A63EC /* ByteBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ByteBuffer.h; path = TYLive2D/Live2D/include/io/ByteBuffer.h; sourceTree = "<group>"; };
+		75095E884AD62D10A51D5692A222C153 /* LDUnmanagedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDUnmanagedObject.h; path = TYLive2D/Live2D/include/memory/LDUnmanagedObject.h; sourceTree = "<group>"; };
+		75C59B38CFD25E26A4C62C90CC1D6F55 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		77B54B1498577C11F33FDC8B703FF87C /* MP4Reader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MP4Reader.swift; path = Sources/ISO/MP4Reader.swift; sourceTree = "<group>"; };
+		77C73E828DFCA8C734D6C04DEE6F6D76 /* EventDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventDispatcher.swift; path = Sources/Util/EventDispatcher.swift; sourceTree = "<group>"; };
+		77E47749EF1DF43E33E6F72316F3FA7C /* Protocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Sources/Core/Protocol.swift; sourceTree = "<group>"; };
+		791175AD6D35B9FA9F5DD833B994E2D0 /* Pods-DemoLivestream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoLivestream-umbrella.h"; sourceTree = "<group>"; };
+		7BA0723CE63F40709E52F3DCE79FD6E8 /* UtMemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtMemory.h; path = TYLive2D/Live2D/include/memory/UtMemory.h; sourceTree = "<group>"; };
+		7D62E19DA15E00E685F045C5B6E48FA8 /* libLive2D.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libLive2D.a; path = TYLive2D/Live2D/lib/libLive2D.a; sourceTree = "<group>"; };
+		8081236D93D987F16DE711D04724772D /* FLVSoundType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVSoundType.swift; path = Sources/FLV/FLVSoundType.swift; sourceTree = "<group>"; };
+		84B179799EB0F9A004AC633BDA1CE0D8 /* MachUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MachUtil.swift; path = Sources/Util/MachUtil.swift; sourceTree = "<group>"; };
+		858262B519F825264908698C076BF3D9 /* MHPageHeaderTmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHPageHeaderTmp.h; path = TYLive2D/Live2D/include/memory/tmp/MHPageHeaderTmp.h; sourceTree = "<group>"; };
+		871DB2E6339849E1A0FFA3F210482A7F /* FLVVideoCodec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVVideoCodec.swift; path = Sources/FLV/FLVVideoCodec.swift; sourceTree = "<group>"; };
+		89820D12F51AB86BAB352D3C0DB6D869 /* FLVTagType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVTagType.swift; path = Sources/FLV/FLVTagType.swift; sourceTree = "<group>"; };
+		8DF39B6F0ACD63EF345E44EBADDC2E23 /* DrawProfileCocos2D.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawProfileCocos2D.h; path = TYLive2D/Live2D/include/graphics/DrawProfileCocos2D.h; sourceTree = "<group>"; };
+		8E46C0267910E215C2AC30B4BA2D6567 /* IOComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOComponent.swift; path = Sources/Media/IOComponent.swift; sourceTree = "<group>"; };
+		902E23ED9FB2F319995152CB0644A9FB /* FLVFrameType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVFrameType.swift; path = Sources/FLV/FLVFrameType.swift; sourceTree = "<group>"; };
+		91CCBA9ECD7E7F7A0FC9073091A38298 /* AudioUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioUtil.swift; path = Platforms/iOS/AudioUtil.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		996B13CBCAD041DD5C0ECE95F77658E1 /* APageHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APageHeader.h; path = TYLive2D/Live2D/include/memory/APageHeader.h; sourceTree = "<group>"; };
+		9AD7AA788FCF909A70FEEA7CBD24D1A7 /* NetSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetSocket.swift; path = Sources/Net/NetSocket.swift; sourceTree = "<group>"; };
+		9BD59FBAEF16D3B5D5803E128C920C3F /* Logboard.Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logboard.Data.swift; path = Sources/Logboard.Data.swift; sourceTree = "<group>"; };
+		9C777E82C94B0F9E65BD3419C82035E1 /* TYLive2DModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLive2DModel.h; path = TYLive2D/Classes/TYLive2DModel.h; sourceTree = "<group>"; };
+		9CF8C90B5226BC32988CB568A218B207 /* AudioSpecificConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioSpecificConfig.swift; path = Sources/ISO/AudioSpecificConfig.swift; sourceTree = "<group>"; };
+		9DB06D3379A549603EC7585D04349B59 /* UtSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtSystem.h; path = TYLive2D/Live2D/include/util/UtSystem.h; sourceTree = "<group>"; };
+		9FDABE196078E3181A71C86895997715 /* ScreenCaptureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenCaptureSession.swift; path = Platforms/iOS/ScreenCaptureSession.swift; sourceTree = "<group>"; };
+		A13FA1AE74E133CB87C4B535C8C037C5 /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMSampleBuffer+Extension.swift"; path = "Sources/Extension/CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
+		A28D7B481794C3F279A0F377516C86DA /* IBaseContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBaseContext.h; path = TYLive2D/Live2D/include/base/IBaseContext.h; sourceTree = "<group>"; };
+		A29DE8ACD630B62C40635D6F4A57CCEA /* ModelContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ModelContext.h; path = TYLive2D/Live2D/include/ModelContext.h; sourceTree = "<group>"; };
+		A3E404FFDFB5819905CF3B1D3BCD7965 /* TYLive2D-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYLive2D-prefix.pch"; sourceTree = "<group>"; };
+		A4402F1E1AAD458ADB621F6D2E534DA2 /* Pods-DemoLivestream-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoLivestream-resources.sh"; sourceTree = "<group>"; };
+		A64AB54FCE7BF031A80779465B34095F /* MemoryParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryParam.h; path = TYLive2D/Live2D/include/memory/MemoryParam.h; sourceTree = "<group>"; };
+		A64F7B1896858B7FE8DAA8EB63434C69 /* UtArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtArray.h; path = TYLive2D/Live2D/include/util/UtArray.h; sourceTree = "<group>"; };
+		A664C0F0EDC828C7FEC10328254DE9FF /* LogboardAppender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogboardAppender.swift; path = Sources/LogboardAppender.swift; sourceTree = "<group>"; };
+		A799B9F5774148FEA913EB291BC9A4CF /* MemoryHolderTmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryHolderTmp.h; path = TYLive2D/Live2D/include/memory/tmp/MemoryHolderTmp.h; sourceTree = "<group>"; };
+		A82717F27EDD0F40DF9C649ADA411222 /* ProgramSpecific.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgramSpecific.swift; path = Sources/ISO/ProgramSpecific.swift; sourceTree = "<group>"; };
+		A98C37EA9BDEFBE7F38E7D114E8ABAC4 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/Util/MD5.swift; sourceTree = "<group>"; };
+		AC845FA2957DE942B784522818F31C5A /* LDMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDMap.h; path = TYLive2D/Live2D/include/type/LDMap.h; sourceTree = "<group>"; };
+		ADD0EAF1EE2E65181094E89020F1B584 /* MotionQueueManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MotionQueueManager.h; path = TYLive2D/Live2D/include/motion/MotionQueueManager.h; sourceTree = "<group>"; };
+		ADD94B969E9D5D2CD9124E45EEC9244C /* FLVAVCPacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVAVCPacketType.swift; path = Sources/FLV/FLVAVCPacketType.swift; sourceTree = "<group>"; };
+		AEAC01F5CFD005BAF2F85D25452FCEAD /* AffineEnt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AffineEnt.h; path = TYLive2D/Live2D/include/base/private/AffineEnt.h; sourceTree = "<group>"; };
+		AF2C9BCE4D40807BA654BEF32FC42FA1 /* RTMPStreamQoSDelagate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPStreamQoSDelagate.swift; path = Sources/RTMP/RTMPStreamQoSDelagate.swift; sourceTree = "<group>"; };
+		AFDE3551C35765A8A8D8E1DBCB4EC18E /* Mutex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutex.swift; path = Sources/Util/Mutex.swift; sourceTree = "<group>"; };
+		B00800A294D66061E9F310FFC9AC959C /* HTTPStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPStream.swift; path = Sources/HTTP/HTTPStream.swift; sourceTree = "<group>"; };
+		B01E85F1A0892439A09F38BE790FD4B8 /* Live2DModelIPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Live2DModelIPhone.h; path = TYLive2D/Live2D/include/Live2DModelIPhone.h; sourceTree = "<group>"; };
+		B0CC18A8A08885C624D77729FAD68648 /* ParamPivots.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParamPivots.h; path = TYLive2D/Live2D/include/param/ParamPivots.h; sourceTree = "<group>"; };
+		B3A813DF8CE4D638A44614CA6478F787 /* NALUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NALUnit.swift; path = Sources/ISO/NALUnit.swift; sourceTree = "<group>"; };
+		B404EC29F942BC753DA7210BF7D6BED9 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Sources/Core/Constant.swift; sourceTree = "<group>"; };
+		B64A84C2D9FAF99DE2111DEFED30DBC6 /* H264Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H264Encoder.swift; path = Sources/Codec/H264Encoder.swift; sourceTree = "<group>"; };
+		B7DE617B689CCC770DA2B91BC13C6264 /* UtMotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtMotion.h; path = TYLive2D/Live2D/include/util/UtMotion.h; sourceTree = "<group>"; };
+		B97A212985A88256DE9023C21E51F48B /* NetStream+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NetStream+Extension.swift"; path = "Platforms/iOS/NetStream+Extension.swift"; sourceTree = "<group>"; };
+		B9F45A72A569EB5E837843F1400B2311 /* ParamDefFloat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParamDefFloat.h; path = TYLive2D/Live2D/include/param/ParamDefFloat.h; sourceTree = "<group>"; };
+		BBA58F597F87FF76BDFE043540C4D045 /* Logboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Logboard-dummy.m"; sourceTree = "<group>"; };
+		BC40E03782B70141153AFBF44FE7ED6E /* TYLive2DModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYLive2DModel.m; path = TYLive2D/Classes/TYLive2DModel.m; sourceTree = "<group>"; };
+		BEC52987B2853344D839BC2B3856E1DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF61F003BBA008906D6C326984934803 /* CMAudioFormatDescription+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMAudioFormatDescription+Extension.swift"; path = "Sources/Extension/CMAudioFormatDescription+Extension.swift"; sourceTree = "<group>"; };
+		C2FAAE1EDDCB7DD05D7860E442AAE2CE /* Pods_DemoLivestream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DemoLivestream.framework; path = "Pods-DemoLivestream.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38154E0D14D277C2631DF8CA6E65629 /* ByteArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ByteArray.swift; path = Sources/Util/ByteArray.swift; sourceTree = "<group>"; };
+		C3899ACE0B300AB44F2DBBECD8B71EFF /* MemoryInfoSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryInfoSet.h; path = TYLive2D/Live2D/include/memory/debug/MemoryInfoSet.h; sourceTree = "<group>"; };
+		C405A9479B7BFA54D5F9731EA489B947 /* LDString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDString.h; path = TYLive2D/Live2D/include/type/LDString.h; sourceTree = "<group>"; };
+		C45995D4C6D15DBD4B2D647885D61DAB /* ClockedQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockedQueue.swift; path = Sources/Util/ClockedQueue.swift; sourceTree = "<group>"; };
+		C53B4BA43B8221A4E401948555B398DA /* Pods-DemoLivestream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoLivestream-dummy.m"; sourceTree = "<group>"; };
+		C5CC2EA2EFDA6A3B3EB34DB6E58F3C62 /* HaishinKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HaishinKit.modulemap; sourceTree = "<group>"; };
+		C6DE7AF7023E9008FA7BC4129FE60C18 /* BDBoxGrid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDBoxGrid.h; path = TYLive2D/Live2D/include/base/BDBoxGrid.h; sourceTree = "<group>"; };
+		C73989181EB60D45862F6C40481FDC5E /* UtString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtString.h; path = TYLive2D/Live2D/include/util/UtString.h; sourceTree = "<group>"; };
+		C7F9420A7340432F97A66D5597A096A0 /* VideoGravityUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoGravityUtil.swift; path = Sources/Util/VideoGravityUtil.swift; sourceTree = "<group>"; };
+		C9ACB3E5C4AD336B659C3D11E3020001 /* TSReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSReader.swift; path = Sources/ISO/TSReader.swift; sourceTree = "<group>"; };
+		C9E9C98834039EEA0C66D19106838CF2 /* ModelImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ModelImpl.h; path = TYLive2D/Live2D/include/model/ModelImpl.h; sourceTree = "<group>"; };
+		CA0699DD8C906CD51BD25915FC63E4FA /* DeviceUtil+Extenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DeviceUtil+Extenstion.swift"; path = "Platforms/iOS/DeviceUtil+Extenstion.swift"; sourceTree = "<group>"; };
+		CA2CA702753DB9D4E46D04A9970086A5 /* MemoryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryInfo.h; path = TYLive2D/Live2D/include/memory/debug/MemoryInfo.h; sourceTree = "<group>"; };
+		CA4833141B28E076D8B75BC80502E5B5 /* UtFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtFile.h; path = TYLive2D/Live2D/include/util/UtFile.h; sourceTree = "<group>"; };
+		CBC348146AC3933FB7F53D7AB62BC589 /* AMemoryHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMemoryHolder.h; path = TYLive2D/Live2D/include/memory/AMemoryHolder.h; sourceTree = "<group>"; };
+		CBE44D5F5723E655540C3335B9561673 /* DDTexture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTexture.h; path = TYLive2D/Live2D/include/draw/DDTexture.h; sourceTree = "<group>"; };
+		CD423AC8D3E19C9B962E033B92B23835 /* SoundSpliter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundSpliter.swift; path = Sources/Media/SoundSpliter.swift; sourceTree = "<group>"; };
+		D02EBB9F80E46F4B97410098CBBA4454 /* UtOpenGLES2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtOpenGLES2.h; path = TYLive2D/Live2D/include/graphics/UtOpenGLES2.h; sourceTree = "<group>"; };
+		D0A76FCC291E9494093B11CEC29E35DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1921B4E9BD6D5340F4A8480B07D24D2 /* VisualEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualEffect.swift; path = Sources/Media/VisualEffect.swift; sourceTree = "<group>"; };
+		D19EAF67D80431224AF34249D68C7B0B /* ParamID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParamID.h; path = TYLive2D/Live2D/include/id/ParamID.h; sourceTree = "<group>"; };
+		D3473D508E33440FFF830D3CB07305CE /* Json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Json.h; path = TYLive2D/Live2D/include/util/Json.h; sourceTree = "<group>"; };
+		D4E1510C219FBB224E327DA721445A61 /* DEF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DEF.h; path = TYLive2D/Live2D/include/DEF.h; sourceTree = "<group>"; };
+		D6298FAB3CFE77BF75D6BA6DD09D4FD8 /* Pods-DemoLivestream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DemoLivestream.modulemap"; sourceTree = "<group>"; };
+		D72D44E8789E79D7BF0ABACD78D6EF4A /* CMVideoFormatDescription+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMVideoFormatDescription+Extension.swift"; path = "Sources/Extension/CMVideoFormatDescription+Extension.swift"; sourceTree = "<group>"; };
+		D96BE156AFB43E9C85B1CBA31F1A98E6 /* VideoIOComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoIOComponent.swift; path = Sources/Media/VideoIOComponent.swift; sourceTree = "<group>"; };
+		DA214227F471F64CC0F883555DF1F6C3 /* TYLive2D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TYLive2D.framework; path = TYLive2D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF19D68E26EEAA79F10FB298746A9BF /* TransportStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransportStream.swift; path = Sources/ISO/TransportStream.swift; sourceTree = "<group>"; };
+		E0BD30BF374B725F1875259DF1C422FD /* RTMPHandshake.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPHandshake.swift; path = Sources/RTMP/RTMPHandshake.swift; sourceTree = "<group>"; };
+		E0CD9C915F173AEF0A2BA9C61773F3C5 /* BaseDataID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseDataID.h; path = TYLive2D/Live2D/include/id/BaseDataID.h; sourceTree = "<group>"; };
+		E16B971D7E61C27F0534FD1896A21208 /* LDColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDColor.h; path = TYLive2D/Live2D/include/type/LDColor.h; sourceTree = "<group>"; };
+		E1E222F4E155173C96A1604E4BEB24B8 /* UtOpenGLDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtOpenGLDebug.h; path = TYLive2D/Live2D/include/graphics/UtOpenGLDebug.h; sourceTree = "<group>"; };
+		E20C9AD07EEFF853A066C1AFC49441FE /* Logboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logboard.swift; path = Sources/Logboard.swift; sourceTree = "<group>"; };
+		E265308843A1B272A38D6B91CAC72DFF /* CMBlockBuffer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMBlockBuffer+Extension.swift"; path = "Sources/Extension/CMBlockBuffer+Extension.swift"; sourceTree = "<group>"; };
+		E27239A03641378C9D2C386E83C35D65 /* CMFormatDescription+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMFormatDescription+Extension.swift"; path = "Sources/Extension/CMFormatDescription+Extension.swift"; sourceTree = "<group>"; };
+		E3478607C1AF36B427C5073FC748A968 /* Logboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Logboard.modulemap; sourceTree = "<group>"; };
+		E3600BA3E478A6A329C102FB01B05401 /* Logboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44622CF2BC53F5E7545759A84BB8768 /* HaishinKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HaishinKit.h; path = Platforms/iOS/HaishinKit.h; sourceTree = "<group>"; };
+		E4EB524C50BED2B90DACF5C6727ACD85 /* LDVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDVector.h; path = TYLive2D/Live2D/include/type/LDVector.h; sourceTree = "<group>"; };
+		E542156C364AA5A5B997337370CEB773 /* TYLive2D.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYLive2D.xcconfig; sourceTree = "<group>"; };
+		E76D2BC98ABFF3581526A21A99D8F74A /* HaishinKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaishinKit-prefix.pch"; sourceTree = "<group>"; };
+		E7C67B979A363567DB21803E3FE5BEFB /* DrawParam_OpenGLES1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawParam_OpenGLES1.h; path = TYLive2D/Live2D/include/graphics/DrawParam_OpenGLES1.h; sourceTree = "<group>"; };
+		E8FEB4F9B75C6F98061102079895A7FF /* NullAppender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NullAppender.swift; path = Sources/NullAppender.swift; sourceTree = "<group>"; };
+		EA84FAC16D046418DFE56247EB75C3E3 /* SoundTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundTransform.swift; path = Sources/Media/SoundTransform.swift; sourceTree = "<group>"; };
+		EA9A02236E76EAD55CE6724A91836D1C /* HTTPService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPService.swift; path = Sources/HTTP/HTTPService.swift; sourceTree = "<group>"; };
+		EC863C7B2F73575450E2FB01DA42AB64 /* HTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequest.swift; path = Sources/HTTP/HTTPRequest.swift; sourceTree = "<group>"; };
+		EDB5B07F8CD37A27AD2CDF2D3E9FCE9B /* RTMPMuxer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPMuxer.swift; path = Sources/RTMP/RTMPMuxer.swift; sourceTree = "<group>"; };
+		EFE3B1D47127C36BB8A06D907546F6B7 /* MotionQueueEnt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MotionQueueEnt.h; path = TYLive2D/Live2D/include/motion/MotionQueueEnt.h; sourceTree = "<group>"; };
+		F075CB16E33FD6D04E7370BA8C901802 /* DrawDataID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawDataID.h; path = TYLive2D/Live2D/include/id/DrawDataID.h; sourceTree = "<group>"; };
+		F09DB2FC86CBA7169DE74FB1C395AE5B /* FLVAACPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FLVAACPacket.swift; path = Sources/FLV/FLVAACPacket.swift; sourceTree = "<group>"; };
+		F0C48723A2F207A74FB610815CCA75B6 /* LDRect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDRect.h; path = TYLive2D/Live2D/include/type/LDRect.h; sourceTree = "<group>"; };
+		F16F3429111810422F09A1BCD1C9F951 /* ScalingMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingMode.swift; path = Sources/Media/ScalingMode.swift; sourceTree = "<group>"; };
+		F177E9BCFCD3F9CD2BADCF612468DA24 /* Logboard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Logboard.xcconfig; sourceTree = "<group>"; };
+		F3A541F4725C10103999616A5F07108E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		F41CCFE5360A33E4D8BAC2B50877396F /* Pods-DemoLivestream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoLivestream.debug.xcconfig"; sourceTree = "<group>"; };
+		F6186C49EA3513CDFE6EE3ABB2B1477C /* IDrawData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDrawData.h; path = TYLive2D/Live2D/include/draw/IDrawData.h; sourceTree = "<group>"; };
+		FB2CCBBBEEAE50B5D30F9CDA4A80AD80 /* CMSampleTimingInfo+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMSampleTimingInfo+Extension.swift"; path = "Sources/Extension/CMSampleTimingInfo+Extension.swift"; sourceTree = "<group>"; };
+		FC02B4C4F0797C75466D136EB6322BF5 /* ParamDefSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParamDefSet.h; path = TYLive2D/Live2D/include/param/ParamDefSet.h; sourceTree = "<group>"; };
+		FC319D1D5F69E22C78C6B2FF20FECEAE /* PacketizedElementaryStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PacketizedElementaryStream.swift; path = Sources/ISO/PacketizedElementaryStream.swift; sourceTree = "<group>"; };
+		FD2DA258C4BC9CCBBAFEDA0FFA01F2B9 /* URL+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extension.swift"; path = "Sources/Extension/URL+Extension.swift"; sourceTree = "<group>"; };
+		FD9993892989FAA12078A96602745857 /* EyeBlinkMotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EyeBlinkMotion.h; path = TYLive2D/Live2D/include/motion/EyeBlinkMotion.h; sourceTree = "<group>"; };
+		FF7C85DCB9640B51797E5E899336AC2C /* RTMPStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMPStream.swift; path = Sources/RTMP/RTMPStream.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86A17E1E422AB44ED7428C4C94C8F6A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C3E1B56FD2C99E8A12662876B6DE3A /* Foundation.framework in Frameworks */,
+				773447D01D82F1D0D477621847C128AB /* Logboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EA5267BD3E21BD996AA6D69F079609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0ED98B6EC8757F0A8CCB03B839BC8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE2E7980ED6D62C0B167E120F165541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6920DADEA95241B39A071439DE1E4D4A /* Foundation.framework in Frameworks */,
+				875E2876BAEE6C11A45897397B4573EA /* GLKit.framework in Frameworks */,
+				388BA95AC6F7B0C46A16C2E8365BFF0A /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F71AE757AB1F6E865F118F6B499A543C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E7EE8A50E7D6639630094AE3200857 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078ED93364E3E9AE987E1CB172020E90 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5088948ED786D1FFA44571F3161152C3 /* Pods-DemoLivestream */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5088948ED786D1FFA44571F3161152C3 /* Pods-DemoLivestream */ = {
+			isa = PBXGroup;
+			children = (
+				D0A76FCC291E9494093B11CEC29E35DD /* Info.plist */,
+				D6298FAB3CFE77BF75D6BA6DD09D4FD8 /* Pods-DemoLivestream.modulemap */,
+				2A8AEFF67FFC0E35309AC6E2D5C194B1 /* Pods-DemoLivestream-acknowledgements.markdown */,
+				716B36E38497AF045B9556194EA8EC39 /* Pods-DemoLivestream-acknowledgements.plist */,
+				C53B4BA43B8221A4E401948555B398DA /* Pods-DemoLivestream-dummy.m */,
+				0AE9F1B947227E8D6943D5BD0FB5092E /* Pods-DemoLivestream-frameworks.sh */,
+				A4402F1E1AAD458ADB621F6D2E534DA2 /* Pods-DemoLivestream-resources.sh */,
+				791175AD6D35B9FA9F5DD833B994E2D0 /* Pods-DemoLivestream-umbrella.h */,
+				F41CCFE5360A33E4D8BAC2B50877396F /* Pods-DemoLivestream.debug.xcconfig */,
+				4F24E181259E8BD2DC51E8541C98F7AC /* Pods-DemoLivestream.release.xcconfig */,
+			);
+			name = "Pods-DemoLivestream";
+			path = "Target Support Files/Pods-DemoLivestream";
+			sourceTree = "<group>";
+		};
+		5A7D7CCB4CCC99897D4F4427B44B933A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEC52987B2853344D839BC2B3856E1DB /* Info.plist */,
+				E3478607C1AF36B427C5073FC748A968 /* Logboard.modulemap */,
+				F177E9BCFCD3F9CD2BADCF612468DA24 /* Logboard.xcconfig */,
+				BBA58F597F87FF76BDFE043540C4D045 /* Logboard-dummy.m */,
+				6A8C602A7D4CACC7657E3ED0029066FC /* Logboard-prefix.pch */,
+				34175D22E72CD50286C49C9E0741A1E6 /* Logboard-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Logboard";
+			sourceTree = "<group>";
+		};
+		670ED090CABC976C1519693342015A86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D62E19DA15E00E685F045C5B6E48FA8 /* libLive2D.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CA58368C5E46E960266DC0A85E48FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20104DE25BF9D1C6364150891A54A69A /* HaishinKit.framework */,
+				20C0FD550B9E0E15E2FD2DE822E77C65 /* Logboard.framework */,
+				C2FAAE1EDDCB7DD05D7860E442AAE2CE /* Pods_DemoLivestream.framework */,
+				DA214227F471F64CC0F883555DF1F6C3 /* TYLive2D.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8B74182C7DA203DF15E6A18536D790F4 /* Frameworks */,
+				BD8A60835A7BF27A2C25B2EC327708BA /* Pods */,
+				7CA58368C5E46E960266DC0A85E48FED /* Products */,
+				078ED93364E3E9AE987E1CB172020E90 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B74182C7DA203DF15E6A18536D790F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3600BA3E478A6A329C102FB01B05401 /* Logboard.framework */,
+				CFF60B203C7A82A158E2188ED21D155B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E5B8B1D932FD2B0D53DAB6406A28AB0 /* TYLive2D */ = {
+			isa = PBXGroup;
+			children = (
+				AEAC01F5CFD005BAF2F85D25452FCEAD /* AffineEnt.h */,
+				3A0EDD89EDA039FAE4505ECEE34292ED /* ALive2DModel.h */,
+				CBC348146AC3933FB7F53D7AB62BC589 /* AMemoryHolder.h */,
+				380205737CAA3D5153EDC8F6BE571849 /* AMotion.h */,
+				996B13CBCAD041DD5C0ECE95F77658E1 /* APageHeader.h */,
+				0BD2CECBBED14DE9BE2EAF3D2664B2E7 /* Arrays2D.h */,
+				2D18921B4F3BA746453C56A40926F544 /* AvatarPartsItem.h */,
+				E0CD9C915F173AEF0A2BA9C61773F3C5 /* BaseDataID.h */,
+				71DCA1E6911472C6D5D73014169CB321 /* BDAffine.h */,
+				C6DE7AF7023E9008FA7BC4129FE60C18 /* BDBoxGrid.h */,
+				614E609FBABBE72E498152BBCC59572E /* BReader.h */,
+				74BAE3D1A008AF8699156D3F954A63EC /* ByteBuffer.h */,
+				CBE44D5F5723E655540C3335B9561673 /* DDTexture.h */,
+				D4E1510C219FBB224E327DA721445A61 /* DEF.h */,
+				F075CB16E33FD6D04E7370BA8C901802 /* DrawDataID.h */,
+				53A69596064F9B22CFE3296F3D4BDDE2 /* DrawParam.h */,
+				E7C67B979A363567DB21803E3FE5BEFB /* DrawParam_OpenGLES1.h */,
+				8DF39B6F0ACD63EF345E44EBADDC2E23 /* DrawProfileCocos2D.h */,
+				42C9BEBFF5FA81DAE9E49E182DF56EA4 /* DrawProfileUnity.h */,
+				FD9993892989FAA12078A96602745857 /* EyeBlinkMotion.h */,
+				387ABD70B3330E114EEE498DD35801A1 /* FileFormat2.h */,
+				A28D7B481794C3F279A0F377516C86DA /* IBaseContext.h */,
+				21DEDA5BB10E44ECC28EFCC31DCFB93F /* IBaseData.h */,
+				4026195D32D666DA75C6C949FAC8D2CC /* ID.h */,
+				1209AF13EE39DC9C9372230943244CB2 /* IDrawContext.h */,
+				F6186C49EA3513CDFE6EE3ABB2B1477C /* IDrawData.h */,
+				05D1DD9DBEC0B04006AF9C7391A8FCE8 /* ISerializableV2.h */,
+				D3473D508E33440FFF830D3CB07305CE /* Json.h */,
+				656E83F5930A00E31D07D85C9C5E8A39 /* LDAffineTransform.h */,
+				02EA9B4F2B925FFA849F7BD7A84A8D4E /* LDAllocator.h */,
+				E16B971D7E61C27F0534FD1896A21208 /* LDColor.h */,
+				AC845FA2957DE942B784522818F31C5A /* LDMap.h */,
+				5DF0BE77DB04DD4ECF96239598D94591 /* LDObject.h */,
+				052C746F7810A72E9FB0E552C8907BA7 /* LDPoint.h */,
+				3E108E6B4B35C292170F05597A2B7749 /* LDPointF.h */,
+				F0C48723A2F207A74FB610815CCA75B6 /* LDRect.h */,
+				3CABAB300D316FB1D5B2A08627DD9B7C /* LDRectF.h */,
+				C405A9479B7BFA54D5F9731EA489B947 /* LDString.h */,
+				75095E884AD62D10A51D5692A222C153 /* LDUnmanagedObject.h */,
+				E4EB524C50BED2B90DACF5C6727ACD85 /* LDVector.h */,
+				14CD1AFF87DED893EC80938AEF2D0547 /* Live2D.h */,
+				B01E85F1A0892439A09F38BE790FD4B8 /* Live2DModelIPhone.h */,
+				68297844781827CDD6C056B021A4568A /* Live2DMotion.h */,
+				1CC98CD3CD48AEEC8C275F7AF6E183AB /* Live2DMotionBin.h */,
+				295842465BA8BB00881DEAE9A8C8064C /* MemoryHolderFixed.h */,
+				A799B9F5774148FEA913EB291BC9A4CF /* MemoryHolderTmp.h */,
+				CA2CA702753DB9D4E46D04A9970086A5 /* MemoryInfo.h */,
+				C3899ACE0B300AB44F2DBBECD8B71EFF /* MemoryInfoSet.h */,
+				A64AB54FCE7BF031A80779465B34095F /* MemoryParam.h */,
+				267474429B129CEA2AB59FCCD90BF0B5 /* MHBin.h */,
+				52D0D4EFF4EB7952277E0E9AF1886DB5 /* MHPageHeaderFixed.h */,
+				858262B519F825264908698C076BF3D9 /* MHPageHeaderTmp.h */,
+				A29DE8ACD630B62C40635D6F4A57CCEA /* ModelContext.h */,
+				C9E9C98834039EEA0C66D19106838CF2 /* ModelImpl.h */,
+				EFE3B1D47127C36BB8A06D907546F6B7 /* MotionQueueEnt.h */,
+				ADD0EAF1EE2E65181094E89020F1B584 /* MotionQueueManager.h */,
+				B9F45A72A569EB5E837843F1400B2311 /* ParamDefFloat.h */,
+				FC02B4C4F0797C75466D136EB6322BF5 /* ParamDefSet.h */,
+				D19EAF67D80431224AF34249D68C7B0B /* ParamID.h */,
+				B0CC18A8A08885C624D77729FAD68648 /* ParamPivots.h */,
+				46BD0472262A7BFECD1D2E2F9E8C682F /* PartsData.h */,
+				2F445176BB6375167FBF1516A6C92D15 /* PartsDataID.h */,
+				4D8C8127C13C2681C787E7D6E221510C /* PhysicsHair.h */,
+				3F1D9576F3ED43FB58B482528DCE04FE /* PhysicsParams.h */,
+				1253D49616DEAD27F2ED35BA05BB3F92 /* PivotManager.h */,
+				560DBEDC019E8FFD2D836B79577C6825 /* RefString.h */,
+				5BB2A0869DD46260E3AA67A40AEAA545 /* TYLive2D.h */,
+				49F07941CCDA2801E960F6C232032592 /* TYLive2D.mm */,
+				9C777E82C94B0F9E65BD3419C82035E1 /* TYLive2DModel.h */,
+				BC40E03782B70141153AFBF44FE7ED6E /* TYLive2DModel.m */,
+				598B511CF37C63AD16602A4C5F32A263 /* TYLive2DView.h */,
+				28CF71D83D61F41BF37A019D3C7BA197 /* TYLive2DView.mm */,
+				A64F7B1896858B7FE8DAA8EB63434C69 /* UtArray.h */,
+				23039300574FC2A188B5B216B935764C /* UtDebug.h */,
+				CA4833141B28E076D8B75BC80502E5B5 /* UtFile.h */,
+				619DC0F9F7865E1642F84486B597E506 /* UtInterpolate.h */,
+				0040D115B0AA0214CD157548E8F3E7EC /* UtMath.h */,
+				7BA0723CE63F40709E52F3DCE79FD6E8 /* UtMemory.h */,
+				2E06E216AB0F89FD23F45E37F7B09B16 /* UtModel.h */,
+				B7DE617B689CCC770DA2B91BC13C6264 /* UtMotion.h */,
+				E1E222F4E155173C96A1604E4BEB24B8 /* UtOpenGLDebug.h */,
+				D02EBB9F80E46F4B97410098CBBA4454 /* UtOpenGLES2.h */,
+				1EE1AE9862D2856BC1174D2B7BE7A351 /* UtOS_iPhone.h */,
+				C73989181EB60D45862F6C40481FDC5E /* UtString.h */,
+				9DB06D3379A549603EC7585D04349B59 /* UtSystem.h */,
+				670ED090CABC976C1519693342015A86 /* Frameworks */,
+				A57CBE2B9B6C40899D10C158632D9B94 /* Support Files */,
+			);
+			name = TYLive2D;
+			path = TYLive2D;
+			sourceTree = "<group>";
+		};
+		A57CBE2B9B6C40899D10C158632D9B94 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D4D86706A995FBEE23DB6C8E99A35D /* Info.plist */,
+				1B325A32B172EFD4AE2811B1EA9ADBB9 /* TYLive2D.modulemap */,
+				E542156C364AA5A5B997337370CEB773 /* TYLive2D.xcconfig */,
+				1A90B0418231BD9ABBA92BC6BF4C8DA2 /* TYLive2D-dummy.m */,
+				A3E404FFDFB5819905CF3B1D3BCD7965 /* TYLive2D-prefix.pch */,
+				56DABA245092B3FC6018B49FEBDC2D06 /* TYLive2D-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TYLive2D";
+			sourceTree = "<group>";
+		};
+		BD8A60835A7BF27A2C25B2EC327708BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF9F7261B5B1C89F8CAC457BEC996C79 /* HaishinKit */,
+				F11FA52EF5F72FD60C1B87D15CA0F354 /* Logboard */,
+				8E5B8B1D932FD2B0D53DAB6406A28AB0 /* TYLive2D */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF9F7261B5B1C89F8CAC457BEC996C79 /* HaishinKit */ = {
+			isa = PBXGroup;
+			children = (
+				5139E5B4778DD3B4392E5DE8DB18AABB /* AACEncoder.swift */,
+				15E136AE97A94C68CCD808FEBA20B8C0 /* AMF0Serializer.swift */,
+				09747F10F20DD936F32FF9940ACE1AF2 /* AMF3Serializer.swift */,
+				200EB01343406AAC136BE1FDF5D63F55 /* AnyUtil.swift */,
+				4FBB595BDC173723E290303FEB059884 /* ASClass.swift */,
+				6E4DFA31886243F4D42FDAB66CE18EB9 /* AudioIOComponent.swift */,
+				9CF8C90B5226BC32988CB568A218B207 /* AudioSpecificConfig.swift */,
+				71B3745A1AFDB5EB0BA6CF4477F25B97 /* AudioStreamPlayback.swift */,
+				91CCBA9ECD7E7F7A0FC9073091A38298 /* AudioUtil.swift */,
+				5543B68824A39398E04421F96BC15921 /* AVMixer.swift */,
+				64EF22A6D7B234E0CE7855F47D1617ED /* AVMixerRecorder.swift */,
+				C38154E0D14D277C2631DF8CA6E65629 /* ByteArray.swift */,
+				C45995D4C6D15DBD4B2D647885D61DAB /* ClockedQueue.swift */,
+				BF61F003BBA008906D6C326984934803 /* CMAudioFormatDescription+Extension.swift */,
+				E265308843A1B272A38D6B91CAC72DFF /* CMBlockBuffer+Extension.swift */,
+				E27239A03641378C9D2C386E83C35D65 /* CMFormatDescription+Extension.swift */,
+				A13FA1AE74E133CB87C4B535C8C037C5 /* CMSampleBuffer+Extension.swift */,
+				FB2CCBBBEEAE50B5D30F9CDA4A80AD80 /* CMSampleTimingInfo+Extension.swift */,
+				D72D44E8789E79D7BF0ABACD78D6EF4A /* CMVideoFormatDescription+Extension.swift */,
+				B404EC29F942BC753DA7210BF7D6BED9 /* Constant.swift */,
+				7295933CF0782A23F930505EEA716A5B /* CRC32.swift */,
+				033539E760F77AB60B1532E6C165E8B4 /* CVPixelBuffer+Extension.swift */,
+				4E6211EBA23FBF772E83D7DB3E441B12 /* Data+Extension.swift */,
+				3058F94BA025F6BDE720142296E6605E /* DeviceUtil.swift */,
+				CA0699DD8C906CD51BD25915FC63E4FA /* DeviceUtil+Extenstion.swift */,
+				77C73E828DFCA8C734D6C04DEE6F6D76 /* EventDispatcher.swift */,
+				72AEFE85D272BE7B56EDC2610E2033C1 /* ExpressibleByIntegerLiteral+Extension.swift */,
+				F09DB2FC86CBA7169DE74FB1C395AE5B /* FLVAACPacket.swift */,
+				53C5A25AAACADFD3548A88876D5A2BD0 /* FLVAudioCodec.swift */,
+				ADD94B969E9D5D2CD9124E45EEC9244C /* FLVAVCPacketType.swift */,
+				902E23ED9FB2F319995152CB0644A9FB /* FLVFrameType.swift */,
+				5AA6CF24A49813E7B5694A25E0F87F2E /* FLVReader.swift */,
+				688D723A6BF34154386034FCEEB5F8F9 /* FLVSoundRate.swift */,
+				400CF6D66D60031CA0CF560CC3EB7768 /* FLVSoundSize.swift */,
+				8081236D93D987F16DE711D04724772D /* FLVSoundType.swift */,
+				89820D12F51AB86BAB352D3C0DB6D869 /* FLVTagType.swift */,
+				871DB2E6339849E1A0FFA3F210482A7F /* FLVVideoCodec.swift */,
+				0B96B061E72A80C4FF19CB15569B3646 /* GLLFView.swift */,
+				742D74CF454D65D9AF3F752FCEF21172 /* H264+AVC.swift */,
+				4652D6F2BD0DA32453372DE0EC84D5CB /* H264Decoder.swift */,
+				B64A84C2D9FAF99DE2111DEFED30DBC6 /* H264Encoder.swift */,
+				E44622CF2BC53F5E7545759A84BB8768 /* HaishinKit.h */,
+				EC863C7B2F73575450E2FB01DA42AB64 /* HTTPRequest.swift */,
+				0FD5589A2D284BE2396150F387F334DB /* HTTPResponse.swift */,
+				EA9A02236E76EAD55CE6724A91836D1C /* HTTPService.swift */,
+				B00800A294D66061E9F310FFC9AC959C /* HTTPStream.swift */,
+				8E46C0267910E215C2AC30B4BA2D6567 /* IOComponent.swift */,
+				47B3AE274D1632375A0FB28D5F569BCF /* LFView.swift */,
+				3913029657C709D587441DC306FB79CD /* M3U.swift */,
+				84B179799EB0F9A004AC633BDA1CE0D8 /* MachUtil.swift */,
+				A98C37EA9BDEFBE7F38E7D114E8ABAC4 /* MD5.swift */,
+				2A6876ACFF7961A2FA49081FE0A8E962 /* MIME.swift */,
+				30F1576F3841E74B54679DD686256B7E /* Mirror+Extension.swift */,
+				77B54B1498577C11F33FDC8B703FF87C /* MP4Reader.swift */,
+				18149AED0973232DA4AAE31D5741F033 /* MP4Sampler.swift */,
+				AFDE3551C35765A8A8D8E1DBCB4EC18E /* Mutex.swift */,
+				B3A813DF8CE4D638A44614CA6478F787 /* NALUnit.swift */,
+				3EDD4E21E2CE0A86A1522E30A86215F8 /* NetClient.swift */,
+				34D7D3C47B89D6027EEF8AE049C5FBC7 /* NetService.swift */,
+				9AD7AA788FCF909A70FEEA7CBD24D1A7 /* NetSocket.swift */,
+				5FFF95549CD3525497BCF80C9D9C55A1 /* NetStream.swift */,
+				B97A212985A88256DE9023C21E51F48B /* NetStream+Extension.swift */,
+				FC319D1D5F69E22C78C6B2FF20FECEAE /* PacketizedElementaryStream.swift */,
+				A82717F27EDD0F40DF9C649ADA411222 /* ProgramSpecific.swift */,
+				77E47749EF1DF43E33E6F72316F3FA7C /* Protocol.swift */,
+				420F7E647F65DA4BE769E691A104F877 /* RTMPChunk.swift */,
+				3C5A84200A516EE4E58E7436089C5140 /* RTMPConnection.swift */,
+				E0BD30BF374B725F1875259DF1C422FD /* RTMPHandshake.swift */,
+				54C12FDCF16AA407203BE7205D28E93A /* RTMPMessage.swift */,
+				EDB5B07F8CD37A27AD2CDF2D3E9FCE9B /* RTMPMuxer.swift */,
+				4ABEB8EE5C5A16188AA63AF0711C0AB1 /* RTMPSharedObject.swift */,
+				2C6E1368C9766FEB807AD3B1891E6B63 /* RTMPSocket.swift */,
+				FF7C85DCB9640B51797E5E899336AC2C /* RTMPStream.swift */,
+				AF2C9BCE4D40807BA654BEF32FC42FA1 /* RTMPStreamQoSDelagate.swift */,
+				5736466524EF9BDA0AC99628979E7CDC /* RTMPTSocket.swift */,
+				F16F3429111810422F09A1BCD1C9F951 /* ScalingMode.swift */,
+				9FDABE196078E3181A71C86895997715 /* ScreenCaptureSession.swift */,
+				CD423AC8D3E19C9B962E033B92B23835 /* SoundSpliter.swift */,
+				EA84FAC16D046418DFE56247EB75C3E3 /* SoundTransform.swift */,
+				5182810F80E1CFDDABF58222F1A701E1 /* TimerDriver.swift */,
+				DDF19D68E26EEAA79F10FB298746A9BF /* TransportStream.swift */,
+				C9ACB3E5C4AD336B659C3D11E3020001 /* TSReader.swift */,
+				22509DBE72CC2079BD4FE2C5A06DA4FD /* TSWriter.swift */,
+				FD2DA258C4BC9CCBBAFEDA0FFA01F2B9 /* URL+Extension.swift */,
+				C7F9420A7340432F97A66D5597A096A0 /* VideoGravityUtil.swift */,
+				D96BE156AFB43E9C85B1CBA31F1A98E6 /* VideoIOComponent.swift */,
+				1FFEAD919329792B75B3602A306009ED /* VideoIOComponent+Extension.swift */,
+				D1921B4E9BD6D5340F4A8480B07D24D2 /* VisualEffect.swift */,
+				D7E80663A867AB6F03D39227699F958E /* Support Files */,
+			);
+			name = HaishinKit;
+			path = HaishinKit;
+			sourceTree = "<group>";
+		};
+		CFF60B203C7A82A158E2188ED21D155B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4FA714B7AE77AF293E81E5AA184DB7C0 /* Foundation.framework */,
+				F3A541F4725C10103999616A5F07108E /* GLKit.framework */,
+				75C59B38CFD25E26A4C62C90CC1D6F55 /* OpenGLES.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D7E80663A867AB6F03D39227699F958E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5CC2EA2EFDA6A3B3EB34DB6E58F3C62 /* HaishinKit.modulemap */,
+				5994F98C75944CC67334A75B8ADB0368 /* HaishinKit.xcconfig */,
+				37FC889C6C7005213C4D9EF55781DF08 /* HaishinKit-dummy.m */,
+				E76D2BC98ABFF3581526A21A99D8F74A /* HaishinKit-prefix.pch */,
+				016E9C4112D96AF680E861672CFE2CD8 /* HaishinKit-umbrella.h */,
+				39D368D36AEB55555B996624B72628B4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HaishinKit";
+			sourceTree = "<group>";
+		};
+		F11FA52EF5F72FD60C1B87D15CA0F354 /* Logboard */ = {
+			isa = PBXGroup;
+			children = (
+				4CE169F756DDF5FE2F29CAE0BF34E846 /* ConsoleAppender.swift */,
+				455A952F9F20AF8027B84F41BA987111 /* Logboard.h */,
+				E20C9AD07EEFF853A066C1AFC49441FE /* Logboard.swift */,
+				9BD59FBAEF16D3B5D5803E128C920C3F /* Logboard.Data.swift */,
+				A664C0F0EDC828C7FEC10328254DE9FF /* LogboardAppender.swift */,
+				029795F938DC152862E6B07E1EFCA82C /* MultiAppender.swift */,
+				E8FEB4F9B75C6F98061102079895A7FF /* NullAppender.swift */,
+				2147EA5AF1962C5BA8993689BB60E64B /* SocketAppender.swift */,
+				5A7D7CCB4CCC99897D4F4427B44B933A /* Support Files */,
+			);
+			name = Logboard;
+			path = Logboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1229528BE5E2883B6FD1E6D3124FB37A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8D237263A9C8DE9429619A97F2BE5 /* AffineEnt.h in Headers */,
+				F667ACBDED2E987D40D47006DC2F3DD4 /* ALive2DModel.h in Headers */,
+				011BD0D10F61750B4C78DAAC87558EEF /* AMemoryHolder.h in Headers */,
+				7D30DC9319844EF4D126EC7C9ADDE653 /* AMotion.h in Headers */,
+				6BCFDCB38416DCE768CAF3BE311E5747 /* APageHeader.h in Headers */,
+				314C60B70913895A1805EFDD2EDFE4C1 /* Arrays2D.h in Headers */,
+				D4D94F5DCAE88DEE72194250AA0564C9 /* AvatarPartsItem.h in Headers */,
+				F2A5ED9132B39BD1954B6399AAA72C93 /* BaseDataID.h in Headers */,
+				2F8AA5C2C201931277A649528E3367CD /* BDAffine.h in Headers */,
+				4690474B042129802807739ED526742B /* BDBoxGrid.h in Headers */,
+				4A326B0009C916EF1106D08B6B27BC01 /* BReader.h in Headers */,
+				469D954D119405FA5B240A5F92B8C601 /* ByteBuffer.h in Headers */,
+				F04A3AF4E332C17C38B77699E07FEDBB /* DDTexture.h in Headers */,
+				31B109E3BDBF66EFE133D5CEF75D77A2 /* DEF.h in Headers */,
+				9228E96B76D05F9254B6008EC2CED777 /* DrawDataID.h in Headers */,
+				3B00A6C2CD269574A56CBA8C2633DAA9 /* DrawParam.h in Headers */,
+				86CDCAB63A6F4BAD7A6CFA9F0A86CA2C /* DrawParam_OpenGLES1.h in Headers */,
+				349D0AE0C3E455AE0FCFC1F4A5B1965B /* DrawProfileCocos2D.h in Headers */,
+				311F28844CED02993FBC4FEA4442BD29 /* DrawProfileUnity.h in Headers */,
+				26C29584BB6CEC283ACC5012FAB6DE1E /* EyeBlinkMotion.h in Headers */,
+				D14B6E3FC80636707BDC836D3FFEC96B /* FileFormat2.h in Headers */,
+				25DB6A91704D78A21F8DE7A3941903FD /* IBaseContext.h in Headers */,
+				45CC92A99BE5AA6AFD1E02054FE384D6 /* IBaseData.h in Headers */,
+				1C0BE9783957508CC78F8E089220A2E3 /* ID.h in Headers */,
+				867889956A9CA100479BEF56C335751A /* IDrawContext.h in Headers */,
+				0A113A5ACCB427C9C810086E1CD7BA5A /* IDrawData.h in Headers */,
+				738F889F292E5C0C86619E1DFB279024 /* ISerializableV2.h in Headers */,
+				35063E9C7C89587574A8A69F06FF84E4 /* Json.h in Headers */,
+				6E78D97BCEAADC0335474193F33E40B9 /* LDAffineTransform.h in Headers */,
+				5CF0CA28B6D18DF1B4F203061CFBD833 /* LDAllocator.h in Headers */,
+				4FAD6E7FB5C9B28FDD69DAE79A036A03 /* LDColor.h in Headers */,
+				4760DFB146EF2DEA9B737EBAD23E8D39 /* LDMap.h in Headers */,
+				CB15B90DA009A996660B9D8CA45F4C14 /* LDObject.h in Headers */,
+				B6848EA43E17AA91B697774460C202A1 /* LDPoint.h in Headers */,
+				8D0C2AE40557D416F2E7909282047C9A /* LDPointF.h in Headers */,
+				74AD2B9306EF5BDF176D255759F936F7 /* LDRect.h in Headers */,
+				0A367C7588C959EC6122E9E66613FF99 /* LDRectF.h in Headers */,
+				C4078BA5676EB19BE42FE41E7D8F56FC /* LDString.h in Headers */,
+				715671395D04F73D3AC9F285B6FFE108 /* LDUnmanagedObject.h in Headers */,
+				1E014EA8FBC823A57A1BD0A58964F730 /* LDVector.h in Headers */,
+				33FD19FD87DD50D8565EC5A11134D819 /* Live2D.h in Headers */,
+				14BD6A29E2F1C93B7959E346030A4201 /* Live2DModelIPhone.h in Headers */,
+				02F74686BFC4C4D4436EB6823DE13163 /* Live2DMotion.h in Headers */,
+				BA9CE49B2A6A7900B475A47FE2461382 /* Live2DMotionBin.h in Headers */,
+				07FD019DC568C79FD20F184343EDBACA /* MemoryHolderFixed.h in Headers */,
+				F3363D7672D9E7AC8A591E66F5707E0F /* MemoryHolderTmp.h in Headers */,
+				0FE57FCE9DC386F3D7060223619BB75E /* MemoryInfo.h in Headers */,
+				F1FD0E0AAF0A9F5D93E38D1DE7D23B77 /* MemoryInfoSet.h in Headers */,
+				12F64854D222DE2F4FDBD3E7C8F75968 /* MemoryParam.h in Headers */,
+				1331B0CE63DAC7619027A90917457B95 /* MHBin.h in Headers */,
+				1C9D94830086C0AEC2EBE0848BB9662B /* MHPageHeaderFixed.h in Headers */,
+				7249F66DCF9EC7E38BDD8A71496A3E09 /* MHPageHeaderTmp.h in Headers */,
+				4F201C43693F58346C1582483684D003 /* ModelContext.h in Headers */,
+				A5DF123F71D0AB84B0118EAA6C8414ED /* ModelImpl.h in Headers */,
+				6A17AD275A16E4BB1FA09A19CAD7C4D5 /* MotionQueueEnt.h in Headers */,
+				9452C1AFE804ABC50E7C5BADB9223082 /* MotionQueueManager.h in Headers */,
+				30EE2DBE365BA6DE4C51ED0664756566 /* ParamDefFloat.h in Headers */,
+				68DF1B8101118928C73B2B7AC152D182 /* ParamDefSet.h in Headers */,
+				6D6B08A63246E2B089D44EF3B49419CB /* ParamID.h in Headers */,
+				3F12735064F3ABF485AB201AAAFA8EA4 /* ParamPivots.h in Headers */,
+				AFD337AEE15D2F897728BCAE51DFD355 /* PartsData.h in Headers */,
+				01A797CCDC00B728EC4856A622F4B36E /* PartsDataID.h in Headers */,
+				6A7E551ABA94336DBB3A33201363B070 /* PhysicsHair.h in Headers */,
+				BD9FC8C9F44B424BB00CE2D89078B205 /* PhysicsParams.h in Headers */,
+				98FF59428EBC8B15B5106FA99EED05F5 /* PivotManager.h in Headers */,
+				98D469A74AF9D8548B88202389C26C22 /* RefString.h in Headers */,
+				2EF890E0CD14F3F8EBFE04183F3264F2 /* TYLive2D-umbrella.h in Headers */,
+				EDFB5EC607DDB20A8C808ECC6CD1AB24 /* TYLive2D.h in Headers */,
+				D877B986D65C5B7190A151F5A9A5EB0E /* TYLive2DModel.h in Headers */,
+				653C08D421E826D536B1643EC4179681 /* TYLive2DView.h in Headers */,
+				BF9AD59FCF064179EC580BC92F17693F /* UtArray.h in Headers */,
+				24706E78ABEA050CA7BF9460F8CAB264 /* UtDebug.h in Headers */,
+				258DF8C4B6B316B2E396B0110DA26B45 /* UtFile.h in Headers */,
+				2623E4E4DB487CC6D741EA0B1533F22E /* UtInterpolate.h in Headers */,
+				C0E90AEAAB83E3506AFDC1C3377A481A /* UtMath.h in Headers */,
+				90A9CA675C57FE965822D50A30143627 /* UtMemory.h in Headers */,
+				1F708D3B60D9B9AC32A11E9DFFE77573 /* UtModel.h in Headers */,
+				3E155C801A0166AAFDCDDDF60E0E0493 /* UtMotion.h in Headers */,
+				FA5D85040BABA8403B187622EB5508A6 /* UtOpenGLDebug.h in Headers */,
+				12C298F525BB46533D5124BAE9EE5587 /* UtOpenGLES2.h in Headers */,
+				FA47E2DC2D0F682374205742C0C33DF2 /* UtOS_iPhone.h in Headers */,
+				0B00F90290A07C0EC94D950FC3C8E6B5 /* UtString.h in Headers */,
+				BACFD7C2BCD622A2F8E0D27EC89B2524 /* UtSystem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F920A6D8176C16F499D7D9A80862FD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA5D1CAE0F173DC6116C5FE48CAB9E4 /* HaishinKit-umbrella.h in Headers */,
+				9AF21DB500A0E30786F2CED967059998 /* HaishinKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCD9AC2D5EA17D20EB0B716EEA56FD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0721BFB2F08EEEA6DE6162A595B4404 /* Pods-DemoLivestream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E56339A343E90021265D0A8745B630 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27BAAD3F0FBC273D0BC879AF3C9F0A40 /* Logboard-umbrella.h in Headers */,
+				6D32DFCA3733C935E7CCAD08638FCA9F /* Logboard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C81450ADE974DF9DE925B53D0A08A90 /* Logboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1FCE95BD36961995A733D69B3E2F0 /* Build configuration list for PBXNativeTarget "Logboard" */;
+			buildPhases = (
+				3C2B501FE64ED75AFB6AAC5CDB9E795A /* Sources */,
+				A5EA5267BD3E21BD996AA6D69F079609 /* Frameworks */,
+				D2E56339A343E90021265D0A8745B630 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logboard;
+			productName = Logboard;
+			productReference = 20C0FD550B9E0E15E2FD2DE822E77C65 /* Logboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97C432089C16F4B52C64A0AD2FBC20DE /* TYLive2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4978F5344458EA2AE5C39A6B59656090 /* Build configuration list for PBXNativeTarget "TYLive2D" */;
+			buildPhases = (
+				A25D2A2C7C426749CD02BF75F2A2A1A4 /* Sources */,
+				DEE2E7980ED6D62C0B167E120F165541 /* Frameworks */,
+				1229528BE5E2883B6FD1E6D3124FB37A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYLive2D;
+			productName = TYLive2D;
+			productReference = DA214227F471F64CC0F883555DF1F6C3 /* TYLive2D.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D51E9F332716D02B6DCA56FB23CD509 /* Pods-DemoLivestream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCA7065A0AE62DE4D0C687BA577E95E /* Build configuration list for PBXNativeTarget "Pods-DemoLivestream" */;
+			buildPhases = (
+				C14A1811FA63C4652EB13CD47DECD790 /* Sources */,
+				F71AE757AB1F6E865F118F6B499A543C /* Frameworks */,
+				8FCD9AC2D5EA17D20EB0B716EEA56FD1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A5319FE4036469598ED2740C244F77D /* PBXTargetDependency */,
+				ACD0834AA8B0669582424A944E0BFB35 /* PBXTargetDependency */,
+				C050AFF6294E791F44889EA89B47EBB9 /* PBXTargetDependency */,
+			);
+			name = "Pods-DemoLivestream";
+			productName = "Pods-DemoLivestream";
+			productReference = C2FAAE1EDDCB7DD05D7860E442AAE2CE /* Pods_DemoLivestream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6FEF78277C0AE9BB8D3192E3EBECF79 /* HaishinKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B124C66EB676BE180241EDD688FC323E /* Build configuration list for PBXNativeTarget "HaishinKit" */;
+			buildPhases = (
+				B30C05DD15A715D60A0528C529106309 /* Sources */,
+				86A17E1E422AB44ED7428C4C94C8F6A7 /* Frameworks */,
+				8F920A6D8176C16F499D7D9A80862FD8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3087247841DB6B17A20A3A94960707 /* PBXTargetDependency */,
+			);
+			name = HaishinKit;
+			productName = HaishinKit;
+			productReference = 20104DE25BF9D1C6364150891A54A69A /* HaishinKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7CA58368C5E46E960266DC0A85E48FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6FEF78277C0AE9BB8D3192E3EBECF79 /* HaishinKit */,
+				7C81450ADE974DF9DE925B53D0A08A90 /* Logboard */,
+				9D51E9F332716D02B6DCA56FB23CD509 /* Pods-DemoLivestream */,
+				97C432089C16F4B52C64A0AD2FBC20DE /* TYLive2D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C2B501FE64ED75AFB6AAC5CDB9E795A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77A35C14894B6720F1A170567A00361 /* ConsoleAppender.swift in Sources */,
+				C2062BF51D878681C280A4FE271DF0C7 /* Logboard-dummy.m in Sources */,
+				ABA8BBCC87F4D8A667853E9E4466879F /* Logboard.Data.swift in Sources */,
+				54A6E7339D574459D4AEBAD8B2E307FF /* Logboard.swift in Sources */,
+				E7AC407E286C477F2A8A3B332DEF5479 /* LogboardAppender.swift in Sources */,
+				84276089765E96226A793FC7371EE87A /* MultiAppender.swift in Sources */,
+				0612931BFA2BF00509637452BD603A0D /* NullAppender.swift in Sources */,
+				74FD6F4DFBE043A1B643765BF7711612 /* SocketAppender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25D2A2C7C426749CD02BF75F2A2A1A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BFB3B37FFADB430A9DD8084536242 /* TYLive2D-dummy.m in Sources */,
+				171DA8058C10AE769AEB9465401B7A63 /* TYLive2D.mm in Sources */,
+				817C2AE5821B40424B6E19E0A2AE1E5D /* TYLive2DModel.m in Sources */,
+				5D94BC237E84BA0D1EEE589BBB904982 /* TYLive2DView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30C05DD15A715D60A0528C529106309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA281256428258DCD20E1880F5AF8156 /* AACEncoder.swift in Sources */,
+				8BAA993698DAD3B67439C552876C7C20 /* AMF0Serializer.swift in Sources */,
+				72C7DB1A06C1995E543CFB1E1AEDF9CB /* AMF3Serializer.swift in Sources */,
+				6BE7F412118187F732EB913FD2F4E3F8 /* AnyUtil.swift in Sources */,
+				5C1657E1EB38D7DB6F6553F1DC2EDAF7 /* ASClass.swift in Sources */,
+				E07CD3752DEC4E51F5A195BA8AA8DD3B /* AudioIOComponent.swift in Sources */,
+				3F1F36761A2D9EB4D78340D2BC04BB7E /* AudioSpecificConfig.swift in Sources */,
+				AF8D0B81BBBA211B3AF7B9ABB9CAB1FC /* AudioStreamPlayback.swift in Sources */,
+				537EEC7ECECC4955582637C98CF36688 /* AudioUtil.swift in Sources */,
+				60E8083FEB1C484C846126F30D6D42A5 /* AVMixer.swift in Sources */,
+				F02D201E0F90FEC0C766E0D16039EE6A /* AVMixerRecorder.swift in Sources */,
+				386CA2353268EF2CA88BABEF0B3D5F40 /* ByteArray.swift in Sources */,
+				6195CDD7E756032E4D0C9832659D8172 /* ClockedQueue.swift in Sources */,
+				F670FD82EBD763C315C50D9AACB0BD1D /* CMAudioFormatDescription+Extension.swift in Sources */,
+				6D5486C65A347D2225A643398ACC6A14 /* CMBlockBuffer+Extension.swift in Sources */,
+				8B8CB8F596E64082DF42ADF4907537C1 /* CMFormatDescription+Extension.swift in Sources */,
+				4F3441A08A0D8B45DA74C2ABC2C76DD4 /* CMSampleBuffer+Extension.swift in Sources */,
+				C243D70624AEB50F604BD8F3984A1C8B /* CMSampleTimingInfo+Extension.swift in Sources */,
+				AD36A02FB90BF4E800188B0B166C2D09 /* CMVideoFormatDescription+Extension.swift in Sources */,
+				036FB16105232FFF001381CA93C23199 /* Constant.swift in Sources */,
+				3E55F7E5D94F061568EF8CD1F70D7EC4 /* CRC32.swift in Sources */,
+				A4DB340E7F01DA0B2B4B17475FE3D2E6 /* CVPixelBuffer+Extension.swift in Sources */,
+				A27EB75D410922BC2E791452414CF284 /* Data+Extension.swift in Sources */,
+				6970459A555AFBF2B767479C931A88DA /* DeviceUtil+Extenstion.swift in Sources */,
+				8064C4B69EFDAB8E09C5146BC065BA18 /* DeviceUtil.swift in Sources */,
+				2FC5902CB2CF2739309DC9D9FA65C9EE /* EventDispatcher.swift in Sources */,
+				DB1AB0680A5E885C5F782DC1832DB8ED /* ExpressibleByIntegerLiteral+Extension.swift in Sources */,
+				F636C78D5B0AF43AB734CD81C0F9B2D4 /* FLVAACPacket.swift in Sources */,
+				2E93FC14A3FC989DEAB1B8433EE334E5 /* FLVAudioCodec.swift in Sources */,
+				96A20EA16EB05D9B37407A1BB29111EA /* FLVAVCPacketType.swift in Sources */,
+				FF96605549792D500E47E71422860FB0 /* FLVFrameType.swift in Sources */,
+				6F4D15858955B373B07F2D56D49D6F85 /* FLVReader.swift in Sources */,
+				70052ECAF0CEAF468BC3AE78ED62E60A /* FLVSoundRate.swift in Sources */,
+				3F0CDB803B2E95BDA0DE8A6E81FF630D /* FLVSoundSize.swift in Sources */,
+				6029009E4882F3B03E6562778F0C0515 /* FLVSoundType.swift in Sources */,
+				0E23CE24E653F2ADA922BD82AB11FB6C /* FLVTagType.swift in Sources */,
+				2F599895ECE5FDE42A2A73823571196D /* FLVVideoCodec.swift in Sources */,
+				80137597E8E98CEB2755C71DFDF9390F /* GLLFView.swift in Sources */,
+				957A29982F9AE71E3A8A169771C77962 /* H264+AVC.swift in Sources */,
+				F8C57CD6A8B9A432188511A59CA533C5 /* H264Decoder.swift in Sources */,
+				6DE2AC13A2E5551389E6E2D5455C589B /* H264Encoder.swift in Sources */,
+				EAAB5D4E59B6AE55E7EDC3F3C31F9CF7 /* HaishinKit-dummy.m in Sources */,
+				225999783BC605B77DEC18D92CBB71A9 /* HTTPRequest.swift in Sources */,
+				C82BA880A24C0AE7506BD8CF21163AD8 /* HTTPResponse.swift in Sources */,
+				AC4D1E2CE723C14823579FE022586766 /* HTTPService.swift in Sources */,
+				1E6107DA9B43068C82C3227B8CC0AC62 /* HTTPStream.swift in Sources */,
+				4221FDAEAC15055C030631D617BDF2CD /* IOComponent.swift in Sources */,
+				2D7822543D77B1BCE4F8CCE745D0A2B2 /* LFView.swift in Sources */,
+				8EB41A23E88185B59FB43427E5E3BAA3 /* M3U.swift in Sources */,
+				4C0E48F8A5DA4F5289DA2B919FE97C94 /* MachUtil.swift in Sources */,
+				59205BF3BE152E7F8AA938476DB48105 /* MD5.swift in Sources */,
+				E97568E27C7D31CCAE556794CA8A8299 /* MIME.swift in Sources */,
+				80ABA9218EA0617134AF240A5157E293 /* Mirror+Extension.swift in Sources */,
+				845CE2647028AD23873B83C26032E071 /* MP4Reader.swift in Sources */,
+				3402EC7686ECB7F785696817B9C20C73 /* MP4Sampler.swift in Sources */,
+				882F4A2CE033FD28AB2B87BB5C75EDF9 /* Mutex.swift in Sources */,
+				6EF4F0904D3D3C61200C8474E12128DF /* NALUnit.swift in Sources */,
+				9AF111B4D1175BE9178471D70789BACE /* NetClient.swift in Sources */,
+				50F37D352B7063B03B8A48806D19DC54 /* NetService.swift in Sources */,
+				2F04A676E11BFD8AB5799EB284C26314 /* NetSocket.swift in Sources */,
+				0BEFD05100F9AE7319C680A893F4DF96 /* NetStream+Extension.swift in Sources */,
+				37B49F81410C79B7AEAABBCFCFBF7295 /* NetStream.swift in Sources */,
+				11EE2D91A8BF072BB9731A7611CEB050 /* PacketizedElementaryStream.swift in Sources */,
+				A5F67C7BE6C2399A51EDC0586FD25B17 /* ProgramSpecific.swift in Sources */,
+				42E3D32F612BE0CA7EA8D8CEA630B9DD /* Protocol.swift in Sources */,
+				A77FB471B08EBF951C2334BF25EF9AC5 /* RTMPChunk.swift in Sources */,
+				ACDE0EA7B262C2F0F34BFF1C223D190B /* RTMPConnection.swift in Sources */,
+				F3FE05392973BEBDDDF0B56DE1E40408 /* RTMPHandshake.swift in Sources */,
+				7A19E26B26EFC128355DD1257D6C7A3A /* RTMPMessage.swift in Sources */,
+				5303675E1DFE7D7D495869CAE290FDCF /* RTMPMuxer.swift in Sources */,
+				0343C5A75C65361DF960DDB24AA6514C /* RTMPSharedObject.swift in Sources */,
+				2F2950AD25E994A2387B106B87A62662 /* RTMPSocket.swift in Sources */,
+				1FDF710A3858AC5E10DDBF0B4DDACB4F /* RTMPStream.swift in Sources */,
+				A7663678ABD526FBF64267134DAFB105 /* RTMPStreamQoSDelagate.swift in Sources */,
+				C7C8EB2632D7E3D493797A46E1AB2C70 /* RTMPTSocket.swift in Sources */,
+				06B9FF3D37FB0C2A5087B4FCEC070F4B /* ScalingMode.swift in Sources */,
+				24073CF471D6039B45648DF76A36AC18 /* ScreenCaptureSession.swift in Sources */,
+				DAC8FEEEC04A29F3888A94CBF34058D4 /* SoundSpliter.swift in Sources */,
+				4B6ECC03C4C9B132C26AD907FC396C93 /* SoundTransform.swift in Sources */,
+				2E6BBE1506D2F68B08D95F6416DD66E8 /* TimerDriver.swift in Sources */,
+				E34D5BF3C40AFB19402B175F407DA020 /* TransportStream.swift in Sources */,
+				162E73CF4AC7638B619A0004D532160E /* TSReader.swift in Sources */,
+				24ACBEDF7F87C776C356719EAD37B29F /* TSWriter.swift in Sources */,
+				7A3F19C0A693D2B95EDABD298DDC7FE4 /* URL+Extension.swift in Sources */,
+				5706E7F3776942634A6B02FAFA2CFC21 /* VideoGravityUtil.swift in Sources */,
+				D128C797A78AAE5612B619E22F8EAF2B /* VideoIOComponent+Extension.swift in Sources */,
+				200409DCB760DAC5C62B56ECFADCCD16 /* VideoIOComponent.swift in Sources */,
+				7E91FF2BA9346189731782F0E24ADA77 /* VisualEffect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14A1811FA63C4652EB13CD47DECD790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385389B7A68051F6E3675CBC48942A83 /* Pods-DemoLivestream-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D3087247841DB6B17A20A3A94960707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logboard;
+			target = 7C81450ADE974DF9DE925B53D0A08A90 /* Logboard */;
+			targetProxy = 9818B23AC245B67C3873A74BFEEA05BB /* PBXContainerItemProxy */;
+		};
+		9A5319FE4036469598ED2740C244F77D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HaishinKit;
+			target = E6FEF78277C0AE9BB8D3192E3EBECF79 /* HaishinKit */;
+			targetProxy = 8290DC746DAB300024EDDD72240BC21D /* PBXContainerItemProxy */;
+		};
+		ACD0834AA8B0669582424A944E0BFB35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logboard;
+			target = 7C81450ADE974DF9DE925B53D0A08A90 /* Logboard */;
+			targetProxy = 9F246924DCA6323282EB3A91A91E8AF8 /* PBXContainerItemProxy */;
+		};
+		C050AFF6294E791F44889EA89B47EBB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TYLive2D;
+			target = 97C432089C16F4B52C64A0AD2FBC20DE /* TYLive2D */;
+			targetProxy = 5C3F895084BAF1F034BD59C842F6F418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		160FC66F56257A7C4915ABD8EFD93033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5994F98C75944CC67334A75B8ADB0368 /* HaishinKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaishinKit/HaishinKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HaishinKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HaishinKit/HaishinKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HaishinKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31E6F87A3FB08C35BE705431001FF3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F177E9BCFCD3F9CD2BADCF612468DA24 /* Logboard.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Logboard/Logboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Logboard/Logboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Logboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C392D3E4C0CA5674E64F3DA01ACC6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E542156C364AA5A5B997337370CEB773 /* TYLive2D.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TYLive2D/TYLive2D-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TYLive2D/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TYLive2D/TYLive2D.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TYLive2D;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58452B0EDD175EA6A3FBC64906DD635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E542156C364AA5A5B997337370CEB773 /* TYLive2D.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TYLive2D/TYLive2D-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TYLive2D/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TYLive2D/TYLive2D.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TYLive2D;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A2C0512FEF30EC65B0CB70B596064241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41CCFE5360A33E4D8BAC2B50877396F /* Pods-DemoLivestream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoLivestream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoLivestream/Pods-DemoLivestream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DemoLivestream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDD50A7841EEE9167F7305ED3FA989E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5994F98C75944CC67334A75B8ADB0368 /* HaishinKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaishinKit/HaishinKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HaishinKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HaishinKit/HaishinKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HaishinKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9FA31D66E848E5115CB30FAABC2A07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F24E181259E8BD2DC51E8541C98F7AC /* Pods-DemoLivestream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoLivestream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoLivestream/Pods-DemoLivestream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DemoLivestream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F56718B84C76D527CB7A931E277E3EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F177E9BCFCD3F9CD2BADCF612468DA24 /* Logboard.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Logboard/Logboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Logboard/Logboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Logboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4978F5344458EA2AE5C39A6B59656090 /* Build configuration list for PBXNativeTarget "TYLive2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58452B0EDD175EA6A3FBC64906DD635E /* Debug */,
+				4C392D3E4C0CA5674E64F3DA01ACC6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1FCE95BD36961995A733D69B3E2F0 /* Build configuration list for PBXNativeTarget "Logboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E6F87A3FB08C35BE705431001FF3A3 /* Debug */,
+				F56718B84C76D527CB7A931E277E3EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B124C66EB676BE180241EDD688FC323E /* Build configuration list for PBXNativeTarget "HaishinKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD50A7841EEE9167F7305ED3FA989E7 /* Debug */,
+				160FC66F56257A7C4915ABD8EFD93033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCA7065A0AE62DE4D0C687BA577E95E /* Build configuration list for PBXNativeTarget "Pods-DemoLivestream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C0512FEF30EC65B0CB70B596064241 /* Debug */,
+				E9FA31D66E848E5115CB30FAABC2A07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
