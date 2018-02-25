@@ -52,6 +52,9 @@ final class ViewController: UIViewController {
     
     var currentPosition: AVCaptureDevice.Position = .back
     var mouthPoints = [Double]()
+    var leftEyePoints = [Double]()
+    var rightEyePoints = [Double]()
+    
     let live2DView = TYLive2DView()
     var timer: Timer?
     let logger: Logboard = Logboard.with("com.rikkei.DemoLivestream")
@@ -77,7 +80,7 @@ final class ViewController: UIViewController {
         
         videoBitrateSlider?.value = Float(RTMPStream.defaultVideoBitrate) / 1024
         audioBitrateSlider?.value = Float(RTMPStream.defaultAudioBitrate) / 1024
-        
+        (childViewControllers.first as? CameraViewController)?.delegate = self
         setUpModel()
         showModelInBroadcaster()
     }
@@ -166,14 +169,14 @@ final class ViewController: UIViewController {
             rtmpConnection.close()
             rtmpConnection.removeEventListener(Event.RTMP_STATUS, selector: #selector(self.rtmpStatusHandler(_:)), observer: self)
             publish.setTitle("●", for: UIControlState())
-            timer?.invalidate()
-            timer = nil
+            (childViewControllers.first as? CameraViewController)?.stop()
         } else {
             UIApplication.shared.isIdleTimerDisabled = true
             rtmpConnection.addEventListener(Event.RTMP_STATUS, selector: #selector(self.rtmpStatusHandler(_:)), observer: self)
             rtmpConnection.connect(Preference.defaultInstance.uri!)
             publish.setTitle("■", for: UIControlState())
-            timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateMouthPoints), userInfo: nil, repeats: true)
+            
+            (childViewControllers.first as? CameraViewController)?.start()
         }
         publish.isSelected = !publish.isSelected
     }
@@ -255,8 +258,19 @@ extension ViewController {
             
             if let mouthOpenY = self.mouthPoints.first {
                 self.mouthPoints.remove(at: 0)
+                print("Mouth: \(mouthOpenY)")
                 params.setValue(mouthOpenY, forKey: "PARAM_MOUTH_OPEN_Y")
                 params.setValue((mouthOpenY * -2) + 1, forKey: "PARAM_MOUTH_FORM")
+            }
+            if let leftEyeOpen = self.leftEyePoints.first {
+                self.leftEyePoints.removeAll()
+                params.setValue(leftEyeOpen, forKey: "PARAM_EYE_L_OPEN")
+                print("Left: \(leftEyeOpen)")
+            }
+            if let rightEyeOpen = self.rightEyePoints.first {
+                self.rightEyePoints.removeAll()
+                params.setValue(rightEyeOpen, forKey: "PARAM_EYE_R_OPEN")
+                print("Right: \(rightEyeOpen)")
             }
             self.live2DView.setParamsWith(params as! [String: NSNumber])
         }
@@ -266,5 +280,76 @@ extension ViewController {
 //        let averagePower = pow(10.0, -Double(arc4random() % 4))
         let averagePower = Double(arc4random() % 9 + 1) / 10.0
         mouthPoints.append(averagePower)
+    }
+}
+
+extension ViewController: CameraViewControllerDelegate {
+    func didReceiveLandmarks(_ landmarks: [Any]!) {
+        if let landmarks = landmarks as? [NSValue] {
+            let eyeRatio = calculateEyeRatio(landmarks: landmarks)
+            leftEyePoints.append(eyeRatio.left)
+            rightEyePoints.append(eyeRatio.right)
+            
+            let mouthRatio = calculateMouthRatio(landmarks: landmarks)
+            mouthPoints.append(mouthRatio)
+        }
+    }
+}
+
+// Calculate facial ratio
+extension ViewController {
+    func calculateEyeRatio(landmarks: [NSValue]) -> (left: Double, right: Double) {
+        // Left eye
+        let point43 = landmarks[42].cgPointValue
+        let point44 = landmarks[43].cgPointValue
+        let point45 = landmarks[44].cgPointValue
+        let point46 = landmarks[45].cgPointValue
+        let point47 = landmarks[46].cgPointValue
+        let point48 = landmarks[47].cgPointValue
+        
+        let leftRatio: Double = (euclideDistance(point1: point44, point2: point48) + euclideDistance(point1: point45, point2: point47)) / (2 * euclideDistance(point1: point43, point2: point46))
+        
+        // Right eye
+        let point37 = landmarks[36].cgPointValue
+        let point38 = landmarks[37].cgPointValue
+        let point39 = landmarks[38].cgPointValue
+        let point40 = landmarks[39].cgPointValue
+        let point41 = landmarks[40].cgPointValue
+        let point42 = landmarks[41].cgPointValue
+        
+        let rightRatio: Double = (euclideDistance(point1: point38, point2: point42) + euclideDistance(point1: point39, point2: point41)) / (2 * euclideDistance(point1: point37, point2: point40))
+//        return (standardizeEye(ratio: leftRatio), standardizeEye(ratio: rightRatio))
+        return (leftRatio, rightRatio)
+    }
+    
+    func calculateMouthRatio(landmarks: [NSValue]) -> Double {
+        let point61 = landmarks[60].cgPointValue
+        let point62 = landmarks[61].cgPointValue
+        let point63 = landmarks[62].cgPointValue
+        let point64 = landmarks[63].cgPointValue
+        let point65 = landmarks[64].cgPointValue
+        let point66 = landmarks[65].cgPointValue
+        let point67 = landmarks[66].cgPointValue
+        let point68 = landmarks[67].cgPointValue
+        
+        let ratio = (euclideDistance(point1: point62, point2: point68) + euclideDistance(point1: point63, point2: point67) + euclideDistance(point1: point64, point2: point66)) / (3 * euclideDistance(point1: point61, point2: point65))
+        return ratio
+    }
+    
+    func euclideDistance(point1: CGPoint, point2: CGPoint) -> Double {
+        let x = (point1.x - point2.x) * (point1.x - point2.x)
+        let y = (point1.y - point2.y) * (point1.y - point2.y)
+        return sqrt(Double(x) + Double(y))
+    }
+    
+    func standardizeEye(ratio: Double) -> Double {
+//        if ratio > 0.3 {
+//            return 1.0
+//        }
+//        if ratio > 0.26 {
+//            return 0.5
+//        }
+//        return 0
+        return (ratio - 0.23) / 0.15
     }
 }

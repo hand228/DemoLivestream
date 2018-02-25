@@ -141,6 +141,16 @@
                                     <constraint firstAttribute="width" secondItem="se2-b7-9lh" secondAttribute="height" multiplier="100:171" id="3YG-Wh-gde"/>
                                 </constraints>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXs-Vw-Qeg">
+                                <rect key="frame" x="285" y="122" width="90" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="cm6-p8-D1v"/>
+                                    <constraint firstAttribute="height" constant="160" id="vQY-N3-8s8"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ph5-ny-9DP" kind="embed" id="uUM-7V-Mao"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -164,6 +174,7 @@
                             <constraint firstItem="5mo-uj-Z3p" firstAttribute="top" secondItem="FFu-p9-L5e" secondAttribute="bottom" constant="-16" id="VNm-R8-y7a"/>
                             <constraint firstItem="ExA-pv-zyG" firstAttribute="top" secondItem="Vha-21-4xi" secondAttribute="bottom" constant="8" id="VRI-KX-6UC"/>
                             <constraint firstAttribute="bottom" secondItem="M77-PI-CvE" secondAttribute="bottom" id="cFY-6b-6t9"/>
+                            <constraint firstItem="mXs-Vw-Qeg" firstAttribute="trailing" secondItem="GI5-6m-yK8" secondAttribute="trailing" id="cqe-5o-Q35"/>
                             <constraint firstItem="I65-tp-rqu" firstAttribute="top" secondItem="zPM-0V-7to" secondAttribute="bottom" constant="8" id="dvJ-Vv-Vq1"/>
                             <constraint firstItem="Vha-21-4xi" firstAttribute="leading" secondItem="cwE-rz-nqd" secondAttribute="trailing" constant="16" id="fyU-gN-yEA"/>
                             <constraint firstItem="zPM-0V-7to" firstAttribute="leading" secondItem="8Sl-mc-GJ9" secondAttribute="leading" constant="16" id="g1q-NN-vyg"/>
@@ -171,6 +182,7 @@
                             <constraint firstAttribute="trailing" secondItem="ExA-pv-zyG" secondAttribute="trailing" constant="16" id="hyc-DD-jqA"/>
                             <constraint firstItem="fXB-yN-qdZ" firstAttribute="top" secondItem="jp3-8P-uUb" secondAttribute="bottom" constant="8" id="iDF-bb-J5d"/>
                             <constraint firstItem="I65-tp-rqu" firstAttribute="top" secondItem="ExA-pv-zyG" secondAttribute="bottom" constant="16" id="iWW-YS-o0k"/>
+                            <constraint firstItem="mXs-Vw-Qeg" firstAttribute="top" secondItem="fLK-SO-c4i" secondAttribute="bottom" id="kgM-oF-zwT"/>
                             <constraint firstItem="noA-n1-BEA" firstAttribute="leading" secondItem="8Sl-mc-GJ9" secondAttribute="leading" constant="8" id="n4x-NU-Bkd"/>
                             <constraint firstItem="6dA-Op-ISo" firstAttribute="top" secondItem="se2-b7-9lh" secondAttribute="bottom" constant="20" id="n6h-SH-bCm"/>
                             <constraint firstAttribute="trailing" secondItem="fXB-yN-qdZ" secondAttribute="trailing" constant="8" id="p0z-ka-8E4"/>
@@ -200,6 +212,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WgE-mh-a3N" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="c2c-6W-xe4">
+            <objects>
+                <viewController id="ph5-ny-9DP" customClass="CameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="21Q-9e-6rX">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-s0-Zv8">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bhg-s0-Zv8" firstAttribute="top" secondItem="21Q-9e-6rX" secondAttribute="top" id="CLt-Tx-TmC"/>
+                            <constraint firstAttribute="trailing" secondItem="bhg-s0-Zv8" secondAttribute="trailing" id="Ucq-Br-qaV"/>
+                            <constraint firstAttribute="bottom" secondItem="bhg-s0-Zv8" secondAttribute="bottom" id="aSa-na-bXg"/>
+                            <constraint firstItem="bhg-s0-Zv8" firstAttribute="leading" secondItem="21Q-9e-6rX" secondAttribute="leading" id="z73-iQ-UX8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bhg-s0-Zv8" id="aS6-hR-2GX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4k-XF-cdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
