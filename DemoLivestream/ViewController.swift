@@ -36,6 +36,14 @@ final class ViewController: UIViewController {
     var rtmpStream: RTMPStream!
     var sharedObject: RTMPSharedObject!
     var currentEffect: VisualEffect?
+    let recordSettings = [
+        AVSampleRateKey: NSNumber(value: Float(44100.0)),
+        AVFormatIDKey: NSNumber(value: Int32(kAudioFormatMPEG4AAC)),
+        AVNumberOfChannelsKey: NSNumber(value: Int32(1)),
+        AVEncoderAudioQualityKey:
+            NSNumber(value: Int32(AVAudioQuality.max.rawValue))
+    ]
+    var meterTimer: Timer
     
     @IBOutlet var lfView: GLLFView?
     @IBOutlet var currentFPSLabel: UILabel?
@@ -58,7 +66,7 @@ final class ViewController: UIViewController {
     let live2DView = TYLive2DView()
     var timer: Timer?
     let logger: Logboard = Logboard.with("com.rikkei.DemoLivestream")
-    
+    var audioRecorder: AVAudioRecorder?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -169,14 +177,15 @@ final class ViewController: UIViewController {
             rtmpConnection.close()
             rtmpConnection.removeEventListener(Event.RTMP_STATUS, selector: #selector(self.rtmpStatusHandler(_:)), observer: self)
             publish.setTitle("●", for: UIControlState())
-            (childViewControllers.first as? CameraViewController)?.stop()
+//            (childViewControllers.first as? CameraViewController)?.stop()
+            startStopRecording()
         } else {
             UIApplication.shared.isIdleTimerDisabled = true
             rtmpConnection.addEventListener(Event.RTMP_STATUS, selector: #selector(self.rtmpStatusHandler(_:)), observer: self)
             rtmpConnection.connect(Preference.defaultInstance.uri!)
             publish.setTitle("■", for: UIControlState())
-            
-            (childViewControllers.first as? CameraViewController)?.start()
+            startStopRecording()
+//            (childViewControllers.first as? CameraViewController)?.start()
         }
         publish.isSelected = !publish.isSelected
     }
@@ -242,6 +251,49 @@ final class ViewController: UIViewController {
 
 // MARK: Live2D
 extension ViewController {
+    func setupAudioRecorder() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try audioRecorder = AVAudioRecorder(url: directoryURL()!,
+                                                settings: recordSettings)
+            audioRecorder.prepareToRecord()
+            audioRecorder.isMeteringEnabled = true
+        } catch { }
+    }
+    
+    func directoryURL() -> URL? {
+        let folderPath = NSTemporaryDirectory()
+        let soundFilePath = folderPath.appendingFormat("%.0f%@", Date.timeIntervalSinceReferenceDate * 1000.0, "audio.caf")
+        let soundFileURL = URL(fileURLWithPath: soundFilePath)
+        return soundFileURL
+    }
+
+    func updateAudioMeter() {
+        audioRecorder.updateMeters()
+        let averagePower = pow(10.0, (Double(audioRecorder.averagePower(forChannel: 0)) / 20))
+        mouthPoints.append(averagePower)
+    }
+    
+    func startStopRecording() {
+        if let audioRecorder = audioRecorder, !audioRecorder.isRecording {
+            let audioSession = AVAudioSession.sharedInstance()
+            do {
+                try audioSession.setActive(true)
+                audioRecorder.record()
+                meterTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateAudioMeter), userInfo: nil, repeats: true)
+            } catch { }
+        } else {
+            meterTimer.invalidate()
+            audioRecorder?.stop()
+            let audioSession = AVAudioSession.sharedInstance()
+            do {
+                try audioSession.setActive(false)
+            } catch { }
+            mouthPoints.add(Double(0))
+        }
+    }
+    
     func setUpModel() {
         let model = TYLive2DModel(plistPath: Bundle.main.path(forResource: "model", ofType: "plist", inDirectory: "Haru"))
         live2DView.load(model)
@@ -318,8 +370,8 @@ extension ViewController {
         let point42 = landmarks[41].cgPointValue
         
         let rightRatio: Double = (euclideDistance(point1: point38, point2: point42) + euclideDistance(point1: point39, point2: point41)) / (2 * euclideDistance(point1: point37, point2: point40))
-//        return (standardizeEye(ratio: leftRatio), standardizeEye(ratio: rightRatio))
-        return (leftRatio, rightRatio)
+        return (standardizeEye(ratio: leftRatio), standardizeEye(ratio: rightRatio))
+//        return (leftRatio, rightRatio)
     }
     
     func calculateMouthRatio(landmarks: [NSValue]) -> Double {
@@ -343,13 +395,9 @@ extension ViewController {
     }
     
     func standardizeEye(ratio: Double) -> Double {
-//        if ratio > 0.3 {
-//            return 1.0
-//        }
-//        if ratio > 0.26 {
-//            return 0.5
-//        }
-//        return 0
-        return (ratio - 0.23) / 0.15
+        let min = 0.15
+        let max = 0.45
+        print("Before: \(ratio)")
+        return (ratio - min) / (max - min)
     }
 }
