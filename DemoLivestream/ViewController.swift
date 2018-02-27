@@ -43,7 +43,7 @@ final class ViewController: UIViewController {
         AVEncoderAudioQualityKey:
             NSNumber(value: Int32(AVAudioQuality.max.rawValue))
     ]
-    var meterTimer: Timer
+    var meterTimer: Timer?
     
     @IBOutlet var lfView: GLLFView?
     @IBOutlet var currentFPSLabel: UILabel?
@@ -64,7 +64,6 @@ final class ViewController: UIViewController {
     var rightEyePoints = [Double]()
     
     let live2DView = TYLive2DView()
-    var timer: Timer?
     let logger: Logboard = Logboard.with("com.rikkei.DemoLivestream")
     var audioRecorder: AVAudioRecorder?
     override func viewDidLoad() {
@@ -89,6 +88,7 @@ final class ViewController: UIViewController {
         videoBitrateSlider?.value = Float(RTMPStream.defaultVideoBitrate) / 1024
         audioBitrateSlider?.value = Float(RTMPStream.defaultAudioBitrate) / 1024
         (childViewControllers.first as? CameraViewController)?.delegate = self
+        setupAudioRecorder()
         setUpModel()
         showModelInBroadcaster()
     }
@@ -257,8 +257,8 @@ extension ViewController {
             try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try audioRecorder = AVAudioRecorder(url: directoryURL()!,
                                                 settings: recordSettings)
-            audioRecorder.prepareToRecord()
-            audioRecorder.isMeteringEnabled = true
+            audioRecorder?.prepareToRecord()
+            audioRecorder?.isMeteringEnabled = true
         } catch { }
     }
     
@@ -269,9 +269,9 @@ extension ViewController {
         return soundFileURL
     }
 
-    func updateAudioMeter() {
-        audioRecorder.updateMeters()
-        let averagePower = pow(10.0, (Double(audioRecorder.averagePower(forChannel: 0)) / 20))
+    @objc func updateAudioMeter() {
+        audioRecorder?.updateMeters()
+        let averagePower = pow(10.0, (Double(audioRecorder?.averagePower(forChannel: 0) ?? -160) / 40))
         mouthPoints.append(averagePower)
     }
     
@@ -281,16 +281,17 @@ extension ViewController {
             do {
                 try audioSession.setActive(true)
                 audioRecorder.record()
-                meterTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateAudioMeter), userInfo: nil, repeats: true)
+                meterTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAudioMeter), userInfo: nil, repeats: true)
             } catch { }
         } else {
-            meterTimer.invalidate()
+            meterTimer?.invalidate()
+            meterTimer = nil
             audioRecorder?.stop()
             let audioSession = AVAudioSession.sharedInstance()
             do {
                 try audioSession.setActive(false)
             } catch { }
-            mouthPoints.add(Double(0))
+            mouthPoints.append(Double(0))
         }
     }
     
